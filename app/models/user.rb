@@ -6,7 +6,6 @@ class User < ApplicationRecord
       new_user.uid = auth_info.uid
       new_user.name = auth_info.info.name
       new_user.email = auth_info.info.email
-      new_user.token = auth_info.credentials.token
       new_user.refresh_token = auth_info.credentials.refresh_token
     end
   end
@@ -21,8 +20,6 @@ class User < ApplicationRecord
               :refresh_token => "#{self.refresh_token}"},
     :headers => {"Authorization" => "Basic #{client_id_and_secret}"}
     )
-    # self.update_attribute(:token, result.parsed_response['access_token'])
-    session[:access_token] = result.parsed_response['access_token']
-    binding.pry
+    result.parsed_response['access_token']
   end
 end

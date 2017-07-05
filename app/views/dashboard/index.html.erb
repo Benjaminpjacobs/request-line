@@ -1,6 +1,9 @@
 <h1>Welcome,
     <%= @user_info['display_name'] %>
 </h1>
+<h4>
+    <%= link_to "Logout", logout_path, method: :delete%>
+</h4>
 <h2>
     <%= @user_info['email']%>
 </h2>
