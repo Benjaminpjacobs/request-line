@@ -85,6 +85,8 @@ GEM
       haml (>= 4.0, < 6)
       nokogiri (>= 1.6.0)
       ruby_parser (~> 3.5)
+    httparty (0.15.5)
+      multi_xml (>= 0.5.2)
     i18n (0.8.4)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -246,6 +248,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.0)
   figaro
   haml
+  httparty
   jbuilder (~> 2.5)
   jquery-rails
   kaminari
