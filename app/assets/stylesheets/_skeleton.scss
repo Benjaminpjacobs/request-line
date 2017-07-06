@@ -1,0 +1,116 @@
+body {
+    font-family: 'Circular', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #ffffff;
+    font-style: normal;
+    background: black;
+}
+
+h1 {
+    font-weight: 900;
+    line-height: 92px;
+    size: 80px;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.profile-flex {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.song-search {
+    margin-top: 2%;
+}
+
+.song-search input[type=text] {
+    color: black;
+    border-style: none;
+    height: 33px;
+    width: 300px;
+    margin: 0px 0px 0px 10px;
+    padding-left: 5px;
+}
+
+.small_label {
+    font-family: 'Circular', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #fffff;
+    font-style: normal;
+}
+
+.greeting {
+    width: 60%;
+}
+
+.greeting a {
+    color: #ffffff;
+    margin: 10px 10px;
+}
+
+.img-container {
+    padding: 0 20px;
+}
+
+.profile-pic {
+    border-radius: 100%;
+}
+
+.playlist-listing {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.playlist-listing a {
+    color: #ffffff;
+}
+
+.login-button {
+    width: 200px;
+    height: 30px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #1ec500;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.login-button a {
+    color: #ffffff
+}
+
+.login-button a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.request {
+    color: #1ec500;
+}
+
+.line {
+    font-style: italic;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 86px;
+}
