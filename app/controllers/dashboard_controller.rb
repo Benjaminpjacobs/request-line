@@ -15,6 +15,9 @@ class DashboardController < ApplicationController
     :headers => {"Authorization" => "Bearer #{session[:access_token]}"}
     )
     @user_info = JSON.parse(user_results.body)
-    @user_playlists = JSON.parse(user_playlists.body)
+    @user_playlists = JSON.parse(user_playlists.body)['items'].map do |playlist|
+      Playlist.new(playlist)
+    end
+    
   end
 end

@@ -32,14 +32,14 @@
                     <table class="table playlist-table">
                         <tbody>
 
-                            <% @user_playlists['items'].each do |playlist| %>
+                            <% @user_playlists.each do |playlist| %>
                                 <tr>
                                     <td>
-                                        <%= radio_button_tag(:playlist, playlist['id']) %>
+                                        <%= radio_button_tag(:playlist, playlist.id) %>
                                     </td>
-                                    <td class='playlist-title' id=<%=playlist[ 'id']%> >
-                                        <span class='playlist-owner-id'><%=playlist['owner'][ 'id']%></span>
-                                        <%= playlist['name'] %>
+                                    <td class='playlist-title' id=<%=playlist.id%> >
+                                        <span class='playlist-owner-id'><%=playlist.owner_id%></span>
+                                        <%= playlist.name %>
                                     </td>
                                 </tr>
                                 <%end%>
