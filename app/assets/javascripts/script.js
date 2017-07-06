@@ -1,6 +1,7 @@
 window.onload = function() {
     var songSearch = document.getElementById('song_query')
     var songSubmit = document.getElementById('song_query_submit')
+    var playlistTitles = document.getElementsByClassName('playlist-title')
     songSubmit.addEventListener('click', function(e) {
         $.ajax({
             url: 'http://localhost:3000/search',
@@ -25,7 +26,21 @@ window.onload = function() {
 
                     results.appendChild(song)
                 }
+            },
+            error: function(XMLHttpRequest, textStatus, errorThrown) {
+                alert("Status: " + textStatus);
+                alert("Error: " + errorThrown);
             }
         })
     })
+
+
+    var myFunction = function() {
+        var attribute = this.getAttribute("id");
+        console.log(attribute);
+    };
+
+    for (var i = 0; i < playlistTitles.length; i++) {
+        playlistTitles[i].addEventListener('click', myFunction, false);
+    }
 }

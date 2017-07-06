@@ -21,14 +21,14 @@
                 <table class="table playlist-table">
                     <tbody>
 
-                        <% @user_playlists.each do |playlist| %>
+                        <% @user_playlists['items'].each do |playlist| %>
                             <% unless playlist['owner']['id'] == current_user.uid %>
                                 <tr>
                                     <td>
                                         <%= radio_button_tag(:playlist, playlist['id']) %>
                                     </td>
-                                    <td>
-                                        <%= link_to playlist['name'], playlist['external_urls']['spotify'] %>
+                                    <td class='playlist-title' id=<%=playlist[ 'id']%> >
+                                        <%= playlist['name'] %>
                                     </td>
                                 </tr>
                                 <%end%>
@@ -39,11 +39,8 @@
         </section>
 
         <section class="song-search">
-            <!--<h2>Song Search:</h2>-->
             <div class="search-form">
-
                 <%= form_tag("/search", method: "get", id: "song-search") do %>
-                    <!--<%= label_tag :q, 'Song Search:', class: 'small_label' %>-->
                     <%= text_field_tag(:song_query)%>
                         <% end %>
                             <button id="song_query_submit">Song Search</button>

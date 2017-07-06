@@ -13,6 +13,7 @@ class User < ApplicationRecord
   def refresh_access_token
     client_id = ENV['client_id']
     client_secret = ENV['client_secret']
+    
     client_id_and_secret = Base64.strict_encode64("#{client_id}:#{client_secret}")
     result = HTTParty.post(
     "https://accounts.spotify.com/api/token",
@@ -20,6 +21,7 @@ class User < ApplicationRecord
               :refresh_token => "#{self.refresh_token}"},
     :headers => {"Authorization" => "Basic #{client_id_and_secret}"}
     )
+
     result.parsed_response['access_token']
   end
 end
