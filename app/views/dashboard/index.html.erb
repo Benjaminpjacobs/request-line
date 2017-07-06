@@ -40,13 +40,17 @@
 
         <section class="song-search">
             <!--<h2>Song Search:</h2>-->
-            <%= form_tag("/search", method: "get") do %>
-                <%= label_tag :q, 'Song Search:', class: 'small_label' %>
-                    <%= text_field_tag(:q) %>
-                        <% end %>
-                            <div class='songs'>
+            <div class="search-form">
 
-                            </div>
+                <%= form_tag("/search", method: "get", id: "song-search") do %>
+                    <!--<%= label_tag :q, 'Song Search:', class: 'small_label' %>-->
+                    <%= text_field_tag(:song_query)%>
+                        <% end %>
+                            <button id="song_query_submit">Song Search</button>
+            </div>
+            <div id='search-results'>
+
+            </div>
         </section>
     </div>
 </div>
