@@ -19,7 +19,9 @@ window.onload = function() {
                     var artist = response[i]['album']['artists'][0]['name']
                     var id = response[i]['id']
 
-                    song.innerHTML = `<h3'>${name}</h3> <p>by <span class='artist'>${artist}</span> on <span class='album'>${album}</span></p>`
+                    song.innerHTML =
+                        `<h3>${name}</h3> 
+                         <p> by <span class='artist'>${artist}</span> on <span class='album'>${album}</span></p>`
 
                     results.appendChild(song)
                 }
