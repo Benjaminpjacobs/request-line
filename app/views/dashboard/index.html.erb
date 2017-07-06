@@ -1,19 +1,18 @@
 <div class='profile-flex'>
-
     <div class='img-container'>
-        <% if @user_info[ 'images'].empty? %>
+        <% if @spotify_user.user_info.images.empty? %>
             <%=image_tag("avatar.png", class: "profile-pic")%>
                 <%else%>
-                    <img src=<%=@user_info[ 'images'][0][ 'url']%> class='profile-pic'>
+                    <img src=<%=@spotify_user.user_info.images.first[ 'url'] %> class='profile-pic'>
                     <%end%>
     </div>
 
     <section class='greeting'>
         <h2>Welcome,
-            <%= @user_info['display_name'] %>
+            <%= @spotify_user.user_info.name %>
         </h2>
         <h4>
-            <%= link_to  "Go To Spotify", @user_info['href']%> |
+            <%= link_to  "Go To Spotify", @spotify_user.user_info.href%> |
                 <%= link_to "Logout", logout_path, method: :delete%>
         </h4>
     </section>
@@ -32,7 +31,7 @@
                     <table class="table playlist-table">
                         <tbody>
 
-                            <% @user_playlists.each do |playlist| %>
+                            <% @spotify_user.playlists.each do |playlist| %>
                                 <tr>
                                     <td>
                                         <%= radio_button_tag(:playlist, playlist.id) %>
@@ -60,7 +59,6 @@
                         <% end %>
                             <button id="song_query_submit">Song Search</button>
             </div>
-
             <div id='search-results'>
             </div>
         </section>
