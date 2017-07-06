@@ -1,0 +1,28 @@
+.playlists h2 {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px 35px 0px;
+}
+
+.playlist-owner-id {
+    display: none
+}
+
+.playlist-listing a {
+    color: #ffffff;
+}
+
+.playlists {
+    margin-top: 20px;
+    width: 600px;
+}
+
+.playlist-listing,
+#search-results {
+    height: 800px;
+    overflow: scroll;
+}
+
+#search-results {
+    width: 500px;
+}

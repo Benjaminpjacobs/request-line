@@ -14,7 +14,6 @@ class DashboardController < ApplicationController
     "https://api.spotify.com/v1/me/playlists?limit=50",
     :headers => {"Authorization" => "Bearer #{session[:access_token]}"}
     )
-    binding.pry
     @user_info = JSON.parse(user_results.body)
     @user_playlists = JSON.parse(user_playlists.body)
   end

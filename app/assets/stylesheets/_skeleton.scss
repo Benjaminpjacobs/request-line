@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+    width: 5px;
+    // height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgray;
+}
+
 body {
     font-family: 'Circular', sans-serif;
     font-size: 16px;
@@ -28,44 +41,6 @@ h1 {
     justify-content: space-around;
 }
 
-.profile-flex {
-    display: flex;
-    flex-flow: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-
-.song-search {
-    margin-top: 2%;
-}
-
-.search-form {
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    justify-content: center;
-}
-
-.song-search input[type=text] {
-    color: black;
-    border-style: none;
-    border-radius: 10px;
-    height: 40px;
-    width: 500px;
-    margin: 0px 0px 0px px;
-    padding-left: 5px;
-}
-
-.song-search button {
-    background: #1ec500;
-    color: #ffffff;
-    border-style: none;
-    border-radius: 10px;
-    width: 500px;
-    height: 40px;
-    margin: 10px 0px 0px 0px;
-}
-
 .small_label {
     font-family: 'Circular', sans-serif;
     font-size: 30px;
@@ -73,64 +48,6 @@ h1 {
     line-height: 33px;
     color: #fffff;
     font-style: normal;
-}
-
-#search-results {
-    width: 500px;
-}
-
-.song {
-    margin: 5px 0px;
-}
-
-.greeting {
-    width: 60%;
-}
-
-.greeting a {
-    color: #ffffff;
-    margin: 10px 10px;
-}
-
-.img-container {
-    padding: 0 20px;
-    margin-left: 5%;
-}
-
-.profile-pic {
-    border-radius: 100%;
-}
-
-.playlist-listing {
-    margin-top: 20px;
-    width: 50%;
-}
-
-.playlist-listing a {
-    color: #ffffff;
-}
-
-.login-button {
-    width: 200px;
-    height: 30px;
-    border-style: none;
-    border-radius: 10px;
-    background-color: #1ec500;
-    color: #ffffff;
-    margin: 10px;
-}
-
-.login-button a {
-    color: #ffffff
-}
-
-.login-button a:hover {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.request {
-    color: #1ec500;
 }
 
 .line {
@@ -141,4 +58,25 @@ h1 {
     font-weight: 800;
     font-size: 90px;
     line-height: 86px;
+}
+
+.song {
+    margin: 5px 0px;
+    font-weight: 100;
+}
+
+.artist,
+.album {
+    font-weight: 200;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.track p {
+    font-weight: 100;
+}
+
+.track-list {
+    margin-top: 10px;
+    list-style-type: none;
 }

@@ -1,0 +1,30 @@
+.song-search {
+    margin-top: 2%;
+}
+
+.search-form {
+    display: flex;
+    flex-flow: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.song-search input[type=text] {
+    color: black;
+    border-style: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 500px;
+    margin: 0px 0px 0px px;
+    padding-left: 5px;
+}
+
+.song-search button {
+    background: #1ec500;
+    color: #ffffff;
+    border-style: none;
+    border-radius: 10px;
+    width: 500px;
+    height: 40px;
+    margin: 10px 0px 0px 0px;
+}

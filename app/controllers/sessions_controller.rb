@@ -4,7 +4,6 @@ class SessionsController < ApplicationController
 
   def create
     if user = User.from_omniauth(request.env['omniauth.auth'])
-      binding.pry
       session[:user_id] = user.id
       session[:access_token] = request.env['omniauth.auth'].credentials.token
       session[:token_expiration] = request.env['omniauth.auth'].credentials.expires_at

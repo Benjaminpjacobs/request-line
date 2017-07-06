@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   get '/login', to: 'sessions#new'
   delete '/logout', to: 'sessions#destroy'
 
-  get '/search', to: 'search#new'
+  get '/song-search', to: 'song_search#new'
+  get '/playlist-search', to: 'playlist_search#new'
   
   resources :dashboard, only: [:index]
 end

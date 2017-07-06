@@ -1,4 +1,4 @@
-class SearchController < ApplicationController
+class SongSearchController < ApplicationController
   def new
     query = params[:q]
     unless query.nil? || query.empty?

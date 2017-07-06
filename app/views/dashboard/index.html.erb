@@ -1,6 +1,11 @@
 <div class='profile-flex'>
+
     <div class='img-container'>
-        <img src=<%=@user_info[ 'images'][0][ 'url']%> class='profile-pic'>
+        <% if @user_info[ 'images'].empty? %>
+            <%=image_tag("avatar.png", class: "profile-pic")%>
+                <%else%>
+                    <img src=<%=@user_info[ 'images'][0][ 'url']%> class='profile-pic'>
+                    <%end%>
     </div>
 
     <section class='greeting'>
@@ -12,42 +17,54 @@
                 <%= link_to "Logout", logout_path, method: :delete%>
         </h4>
     </section>
+
     <div class='flex-container-row'>
 
-        <section class="playlist-listing">
-            <h2>Playlists:</h2>
-            <%= form_tag( 'path' , remote: true) do |f| %>
 
-                <table class="table playlist-table">
-                    <tbody>
+        <div class='playlists'>
 
-                        <% @user_playlists['items'].each do |playlist| %>
-                            <% unless playlist['owner']['id'] == current_user.uid %>
+            <h2>Playlists</h2>
+
+            <section class="playlist-listing">
+
+                <%= form_tag( 'path' , remote: true) do |f| %>
+
+                    <table class="table playlist-table">
+                        <tbody>
+
+                            <% @user_playlists['items'].each do |playlist| %>
                                 <tr>
                                     <td>
                                         <%= radio_button_tag(:playlist, playlist['id']) %>
                                     </td>
                                     <td class='playlist-title' id=<%=playlist[ 'id']%> >
+                                        <span class='playlist-owner-id'><%=playlist['owner'][ 'id']%></span>
                                         <%= playlist['name'] %>
                                     </td>
                                 </tr>
                                 <%end%>
-                                    <%end%>
-                    </tbody>
-                </table>
-                <% end %>
-        </section>
+                        </tbody>
+                    </table>
+
+                    <% end %>
+
+            </section>
+
+
+        </div>
 
         <section class="song-search">
             <div class="search-form">
-                <%= form_tag("/search", method: "get", id: "song-search") do %>
+                <%= form_tag("/song-search", method: "get", id: "song-search") do %>
                     <%= text_field_tag(:song_query)%>
                         <% end %>
                             <button id="song_query_submit">Song Search</button>
             </div>
-            <div id='search-results'>
 
+            <div id='search-results'>
             </div>
         </section>
+
     </div>
+
 </div>

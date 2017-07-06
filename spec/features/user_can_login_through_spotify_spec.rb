@@ -26,7 +26,8 @@ RSpec.feature 'User can login' do
       },
       credentials: {
         token: "pizza",
-        refresh_token: "secretpizza"
+        refresh_token: "secretpizza",
+        expires_at: DateTime.now.to_time.to_i + 3600,
       }
     })
   end
