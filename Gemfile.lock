@@ -252,6 +252,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   erb2haml
   factory_girl_rails (~> 4.0)
+  faraday
   figaro
   haml
   httparty

@@ -2,6 +2,7 @@ window.onload = function() {
     var songSearch = document.getElementById('song_query')
     var songSubmit = document.getElementById('song_query_submit')
     var playlistTitles = document.getElementsByClassName('playlist-title')
+
     songSubmit.addEventListener('click', function(e) {
         $.getJSON({
             url: 'http://localhost:3000/song/search',
@@ -35,7 +36,7 @@ window.onload = function() {
     })
 
 
-    var myFunction = function(playlist) {
+    var getPlaylistTracks = function(playlist) {
         var playlistId = playlist.getAttribute("id");
         var userId = playlist.firstElementChild.innerText;
         //getjson
@@ -71,7 +72,7 @@ window.onload = function() {
         playlistTitles[i].addEventListener('click', function() {
             if (this.children.length === 1) {
                 console.log(this)
-                myFunction(this)
+                getPlaylistTracks(this)
             } else {
                 var list = this.children[1];
                 this.removeChild(list);

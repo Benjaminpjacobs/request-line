@@ -7,7 +7,7 @@ class Playlist
   end
 
   def self.user_playlists(token)
-    Service.playlists(token).map do |playlist|
+    SpotifyService.playlists(token).map do |playlist|
       new(playlist)
     end
   end

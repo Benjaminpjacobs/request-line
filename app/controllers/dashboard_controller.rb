@@ -3,11 +3,17 @@ class DashboardController < ApplicationController
   before_action :check_token, only: [:index]
   
   def index
+    binding.pry
     @spotify_user = SpotifyUser.new(current_user)
   end
   
-
   private
+
+  def check_current_user
+    unless current_user
+      redirect_to login_path
+    end
+  end
 
   def check_token
     if DateTime.now.to_time.to_i > session[:token_expiration]
@@ -15,11 +21,5 @@ class DashboardController < ApplicationController
       session[:token_expiration] = session[:token_expiration] + 3600
     end
   end
-
-  def check_current_user
-    unless current_user
-      redirect_to login_path
-    end
-    
-  end
+  
 end

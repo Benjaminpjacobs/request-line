@@ -15,7 +15,8 @@ class User < ApplicationRecord
     client_id = ENV['client_id']
     client_secret = ENV['client_secret']
     client_id_and_secret = Base64.strict_encode64("#{client_id}:#{client_secret}")
-    result = Service.refresh_token(refresh_token, client_id_and_secret)
+    binding.pry
+    result = SpotifyService.refresh_token(refresh_token, client_id_and_secret)
     result['access_token']
   end
 end

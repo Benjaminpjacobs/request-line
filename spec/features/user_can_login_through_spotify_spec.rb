@@ -9,9 +9,8 @@ RSpec.feature 'User can login' do
     visit "/login"
     assert_equal 200, page.status_code
     click_link('Sign in with Spotify')
-    binding.pry
     expect(current_path).to  eq(dashboard_index_path)
-    expect(page).to have_content("Horace")
+    expect(page).to have_content("another_benjamin_jacobs")
     expect(page).to have_link("Logout")
   end
 
@@ -19,14 +18,15 @@ RSpec.feature 'User can login' do
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:spotify] = OmniAuth::AuthHash.new({
       provider: 'spotify',
+      uid: 'another_benjamin_jacobs',
       info: {
-        user_id: "1234",
-        name: "Horace Warren",
-        email: "worace@gmail"
+        name: "another_benjamin_jacobs",
+        urls: {"spotify"=>"https://open.spotify.com/user/another_benjamin_jacobs"},
+        image: nil
       },
       credentials: {
-        token: "pizza",
-        refresh_token: "secretpizza",
+        token: ENV['spotify_access_token'],
+        refresh_token: ENV['spotify_refresh_token'],
         expires_at: DateTime.now.to_time.to_i + 3600,
       }
     })
