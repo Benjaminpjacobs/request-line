@@ -3,7 +3,6 @@ class DashboardController < ApplicationController
   before_action :check_token, only: [:index]
   
   def index
-    binding.pry
     @spotify_user = SpotifyUser.new(current_user)
   end
   

@@ -7,7 +7,7 @@ describe SpotifyService do
       TestToken.refresh_token
       VCR.use_cassette("services/user_info") do
         user_info = SpotifyService.info(ENV['spotify_access_token'])
-
+        binding.pry
         expect(user_info).to have_key('display_name')
         expect(user_info).to have_key('email')
         expect(user_info).to have_key('external_urls')

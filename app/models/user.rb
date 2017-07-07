@@ -1,7 +1,6 @@
 class User < ApplicationRecord
 
   def self.from_omniauth(auth_info)
-    binding.pry
     new_user = find_or_initialize_by(uid: auth_info[:uid])
     new_user.uid = auth_info.uid
     new_user.name = auth_info.info.name
