@@ -7,4 +7,9 @@ class Info
     @images = attrs['images']
     @href = attrs['external_urls']['spotify']
   end
+
+  def self.user_info(token)
+    users_info = Service.info(token)
+    new(users_info)
+  end
 end

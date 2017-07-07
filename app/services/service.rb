@@ -1,5 +1,9 @@
 class Service
 
+  def initialize(token)
+    @token = token
+  end
+
   def self.conn(query, token)
     HTTParty.get(
     "https://api.spotify.com/v1/#{query}",
@@ -8,15 +12,12 @@ class Service
   end
   
   def self.info(token)
-    attrs = conn("me", token)
-    Info.new(attrs)
+    conn("me", token)
   end
 
   def self.playlists(token)
     query = 'me/playlists?limit=50'
-    conn(query, token)['items'].map do |playlist|
-      Playlist.new(playlist)
-    end
+    conn(query, token)['items']
   end
 
   def self.playlist_song_search(user_id, playlist_id, token)

@@ -5,4 +5,10 @@ class Playlist
     @name = attrs['name']
     @owner_id = attrs['owner']['id']
   end
+
+  def self.user_playlists(token)
+    Service.playlists(token).map do |playlist|
+      new(playlist)
+    end
+  end
 end
