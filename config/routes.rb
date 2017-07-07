@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'dashboard#index'
   get '/auth/spotify', as: :spotify_login
   get '/auth/spotify/callback', to: 'sessions#create'
 
@@ -14,4 +15,5 @@ Rails.application.routes.draw do
   end
   
   resources :dashboard, only: [:index]
+  
 end

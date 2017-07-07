@@ -5,6 +5,6 @@ class Info
     @email = attrs['email']
     @id = attrs['id']
     @images = attrs['images']
-    @href = attrs['href']
+    @href = attrs['external_urls']['spotify']
   end
 end
