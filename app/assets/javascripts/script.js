@@ -4,7 +4,7 @@ window.onload = function() {
     var playlistTitles = document.getElementsByClassName('playlist-title')
     songSubmit.addEventListener('click', function(e) {
         $.getJSON({
-            url: 'http://localhost:3000/song-search',
+            url: 'http://localhost:3000/song/search',
             data: {
                 q: songSearch.value,
             },
@@ -40,7 +40,7 @@ window.onload = function() {
         var userId = playlist.firstElementChild.innerText;
         //getjson
         $.getJSON({
-            url: 'http://localhost:3000/playlist-search',
+            url: 'http://localhost:3000/playlist/search',
             data: {
                 playlist_id: playlistId,
                 user_id: userId,

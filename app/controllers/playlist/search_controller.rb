@@ -1,4 +1,4 @@
-class PlaylistSearchController < ApplicationController
+class Playlist::SearchController < ApplicationController
   def new
     user_id = params[:user_id]
     playlist_id = params[:playlist_id]
