@@ -47,13 +47,12 @@ class SpotifyService
   end
 
   def self.refresh_token(refresh_token, client_id_and_secret)
-    connection = Faraday.new :url=> "https://accounts.spotify.com"
-    response = connection.post do |req|
-      req.url '/token'
-      req.headers['Authorization'] = "Basic #{client_id_and_secret}"
-      req.body ={:grant_type => "refresh_token",
-              :refresh_token => "#{refresh_token}"}
-      end
-    JSON.parse(response.body)
+    result = HTTParty.post(
+    "https://accounts.spotify.com/api/token",
+    :body => {:grant_type => "refresh_token",
+              :refresh_token => "#{refresh_token}"},
+    :headers => {"Authorization" => "Basic #{client_id_and_secret}"}
+    )
+   result.parsed_response
   end
 end
