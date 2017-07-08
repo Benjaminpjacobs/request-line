@@ -6,7 +6,7 @@ class Request < ApplicationRecord
 
   def approve(user)
     response = SpotifyService.update_playlist(self, user)
-    if response == 'Created'
+    if response.response.message == 'Created'
       self.status = 1
       self.save
     end

@@ -51,11 +51,10 @@ class SpotifyService
   end
 
   def update_playlist
-    result = HTTParty.post(
+    HTTParty.post(
     "https://api.spotify.com/v1/users/#{@user_id}/playlists/#{@playlist_id}/tracks?uris=spotify%3Atrack%3A#{@song_id}",
     :headers => {"Authorization" => "Bearer #{@token}"}
     )
-    result.response.message
     
   end
 
