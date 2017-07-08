@@ -1,5 +1,4 @@
 window.onload = function() {
-    var songSearch = document.getElementById('song_query')
     var playlistExpand = document.getElementsByClassName('expand')
 
     var getPlaylistTracks = function(playlist, hideButton) {

@@ -2,17 +2,17 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <div class='img-container'>
-                <% if @spotify_user.info.images.empty? %>
+                <% if spotify_user.info.images.empty? %>
                     <%=image_tag("avatar.png", class: "profile-pic")%>
                         <%else%>
-                            <img src=<%=@spotify_user.info.images.first[ 'url'] %> class='profile-pic'>
+                            <img src=<%=spotify_user.info.images.first[ 'url'] %> class='profile-pic'>
                             <%end%>
             </div>
             <p><span class='welcome'> 
               Welcome
-                <%= @spotify_user.info.name %> 
+                <%= spotify_user.info.name %> 
               </span> |
-                <%= link_to  "Go To Spotify", @spotify_user.info.href%> |
+                <%= link_to  "Go To Spotify", spotify_user.info.href%> |
                     <%= link_to "Logout", logout_path, method: :delete%>
             </p>
         </div>
