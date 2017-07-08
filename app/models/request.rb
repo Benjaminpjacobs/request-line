@@ -14,7 +14,6 @@ class Request < ApplicationRecord
   end
 
   def deny(user)
-    binding.pry
     self.status = 2
     self.save
   end

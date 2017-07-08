@@ -22,7 +22,6 @@ class RequestController < ApplicationController
 
 
   def update
-    binding.pry
     response = @request.send(params[:update_action].to_sym, current_user)
     redirect_to request_index_path
   end

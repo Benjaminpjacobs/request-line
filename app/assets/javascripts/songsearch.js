@@ -1,6 +1,21 @@
 window.onload = function() {
     var songSearch = document.getElementById('song_query')
     var songSubmit = document.getElementById('song_query_submit')
+    var outgoing = document.querySelector('.outgoing')
+    var incoming = document.querySelector('.incoming')
+    var incomingRequests = document.getElementById("incoming-requests")
+    var outgoingRequests = document.getElementById("outgoing-requests")
+
+    if (outgoing !== null && incoming !== null) {
+        outgoing.addEventListener('click', function() {
+            $("#outgoing-requests").toggle();
+
+        })
+        incoming.addEventListener('click', function() {
+            $("#incoming-requests").toggle();
+
+        })
+    }
 
     if (songSubmit !== null) {
 
