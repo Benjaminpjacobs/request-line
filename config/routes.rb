@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get '/auth/spotify/callback', to: 'sessions#create'
 
   resources :dashboard, only: [:index]
-  resources :request, only: [:new, :create]
+  resources :request, only: [:new, :create, :index]
+
   namespace :song do
     get '/search', to: 'search#new'
   end

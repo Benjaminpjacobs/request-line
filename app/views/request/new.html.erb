@@ -1,6 +1,6 @@
 <section class="song-search">
     <div class="search-form">
-        <%= form_tag("/song-search", method: "get", id: "song-search") do %>
+        <%= form_tag("/song/search", method: "get", id: "song-search") do %>
             <%= text_field_tag(:song_query)%>
                 <% end %>
                     <button id="song_query_submit">Song Search</button>

@@ -25,7 +25,7 @@ window.onload = function() {
                         song.innerHTML =
                             `<h3>${name}</h3> 
                 <p> by <span class='artist'>${artist}</span> on <span class='album'>${album}</span></p>
-                <a rel='nofollow' data-method='post' href='/request?song_id=${id}'>Submit Request</a>
+                <a rel='nofollow' data-method='post' href='/request?song_id=${id}&song_title=${name}&song_artist=${artist}&song_album=${album}'>Submit Request</a>
                 `
 
                         results.appendChild(song)

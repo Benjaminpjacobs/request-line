@@ -1,0 +1,79 @@
+<div class='filters'>
+    <p>
+        <span class='outgoing'>Outgoing</span> <span class='incoming'>Incoming</span>
+    </p>
+</div>
+
+<table class="table request-table" id="incoming-requests">
+    <thead>
+        <tr>
+            <td>Request From</td>
+            <td>Playlist Name</td>
+            <td>Song Title</td>
+            <td>Artist</td>
+            <td>Status</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        <% current_user.incoming_requests.each do |request| %>
+            <tr>
+                <td>
+                    <%=request.request_from.name%>
+                </td>
+                <td>
+                    <%=request.playlist_name%>
+                </td>
+                <td>
+                    <%=request.song_title%>
+                </td>
+                <td>
+                    <%=request.artist%>
+                </td>
+                <td>
+                    <%=request.status%>
+                </td>
+                <td>
+                    action
+                </td>
+            </tr>
+            <%end%>
+    </tbody>
+</table>
+
+<table class="table request-table" id="outgoing-requests">
+    <thead>
+        <tr>
+            <td>Playlist Owner</td>
+            <td>Playlist Name</td>
+            <td>Song Title</td>
+            <td>Artist</td>
+            <td>Status</td>
+            <td>Action</td>
+        </tr>
+    </thead>
+    <tbody>
+        <% current_user.outgoing_requests.each do |request| %>
+            <tr>
+                <td>
+                    <%=request.playlist_owner.name%>
+                </td>
+                <td>
+                    <%=request.playlist_name%>
+                </td>
+                <td>
+                    <%=request.song_title%>
+                </td>
+                <td>
+                    <%=request.artist%>
+                </td>
+                <td>
+                    <%=request.status%>
+                </td>
+                <td>
+                    action
+                </td>
+            </tr>
+            <%end%>
+    </tbody>
+</table>

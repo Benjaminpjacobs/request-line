@@ -47,4 +47,15 @@ window.onload = function() {
             }
         }, false);
     }
+    var outgoingButton = document.getElementById('outgoing')
+    var incomingButton = document.getElementById('incoming')
+
+    outgoingButton.addEventListener('click', function() {
+        console.log('connected');
+        // $("#outgoing-requests").toggle();
+    })
+
+    incomingButton.addEventListener('click', function() {
+        // $("#incoming-requests").toggle();
+    })
 }

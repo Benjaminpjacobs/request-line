@@ -1,0 +1,27 @@
+.request-table {
+    max-width: 95%;
+    font-weight: 200;
+}
+
+.request-table td {
+    max-width: 85px;
+}
+
+.outgoing,
+.incoming {
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #1ec500;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.outgoing:hover,
+.incoming:hover {
+    cursor: pointer;
+    background-color: #3cff1a;
+}
+
+#outgoing-requests {
+    display: none;
+}

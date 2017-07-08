@@ -22,7 +22,6 @@ class SpotifyService
   end
   
   def self.song_search(search, token)
-    binding.pry
     new(token, {search: search}).song_search
   end
 

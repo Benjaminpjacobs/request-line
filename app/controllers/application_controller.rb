@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   end
 
   def spotify_user
-    @spotify_user ||= SpotifyUser.new(current_user) if current_user
+    @spotify_uswer ||= SpotifyUser.new(current_user) if current_user
   end
 end
