@@ -1,0 +1,375 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/users/another_benjamin_jacobs/playlists/3B6onVfcQRLy40kGSzNgaP/tracks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_ACCESS_TOKEN>
+      User-Agent:
+      - Faraday v0.12.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 08 Jul 2017 23:42:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=0
+      Etag:
+      - '"d02641f3526dd42032730b6d3e2e815d"'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "href" : "https://api.spotify.com/v1/users/another_benjamin_jacobs/playlists/3B6onVfcQRLy40kGSzNgaP/tracks?offset=0&limit=100",
+          "items" : [ {
+            "added_at" : "2017-07-06T21:11:50Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/another_benjamin_jacobs"
+              },
+              "href" : "https://api.spotify.com/v1/users/another_benjamin_jacobs",
+              "id" : "another_benjamin_jacobs",
+              "type" : "user",
+              "uri" : "spotify:user:another_benjamin_jacobs"
+            },
+            "is_local" : false,
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/4UXqAaa6dQYAk18Lv7PEgX",
+                  "id" : "4UXqAaa6dQYAk18Lv7PEgX",
+                  "name" : "Fall Out Boy",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX"
+                } ],
+                "available_markets" : [ "CA", "MX", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/0EVJX4RlYKuApsAN5CaDa3"
+                },
+                "href" : "https://api.spotify.com/v1/albums/0EVJX4RlYKuApsAN5CaDa3",
+                "id" : "0EVJX4RlYKuApsAN5CaDa3",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/e569c484377493bf8455b2b779d8f2189838c22f",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/6e0d658cdffcb777a9c62f86e00c8514a3fd7f06",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/c5ca3ef667a96928f374a917ee1316a43bfdfdb2",
+                  "width" : 64
+                } ],
+                "name" : "Save Rock And Roll",
+                "type" : "album",
+                "uri" : "spotify:album:0EVJX4RlYKuApsAN5CaDa3"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
+                },
+                "href" : "https://api.spotify.com/v1/artists/4UXqAaa6dQYAk18Lv7PEgX",
+                "id" : "4UXqAaa6dQYAk18Lv7PEgX",
+                "name" : "Fall Out Boy",
+                "type" : "artist",
+                "uri" : "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX"
+              } ],
+              "available_markets" : [ "CA", "MX", "US" ],
+              "disc_number" : 1,
+              "duration_ms" : 186826,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USUM71300299"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/7s0lDK7y3XLmI7tcsRAbW0"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/7s0lDK7y3XLmI7tcsRAbW0",
+              "id" : "7s0lDK7y3XLmI7tcsRAbW0",
+              "name" : "My Songs Know What You Did In The Dark (Light Em Up)",
+              "popularity" : 70,
+              "preview_url" : null,
+              "track_number" : 2,
+              "type" : "track",
+              "uri" : "spotify:track:7s0lDK7y3XLmI7tcsRAbW0"
+            }
+          }, {
+            "added_at" : "2017-07-06T21:11:57Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/another_benjamin_jacobs"
+              },
+              "href" : "https://api.spotify.com/v1/users/another_benjamin_jacobs",
+              "id" : "another_benjamin_jacobs",
+              "type" : "user",
+              "uri" : "spotify:user:another_benjamin_jacobs"
+            },
+            "is_local" : false,
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/2iojnBLj0qIMiKPvVhLnsH"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/2iojnBLj0qIMiKPvVhLnsH",
+                  "id" : "2iojnBLj0qIMiKPvVhLnsH",
+                  "name" : "Trey Songz",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:2iojnBLj0qIMiKPvVhLnsH"
+                } ],
+                "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/5gQtvMHA7yqdzKXrHpe63C"
+                },
+                "href" : "https://api.spotify.com/v1/albums/5gQtvMHA7yqdzKXrHpe63C",
+                "id" : "5gQtvMHA7yqdzKXrHpe63C",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/bfe189c3573661abaf7843d24a61dca139ff69f2",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/0a8a895c35b24e1f3bf09fc47803e5334a81225d",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/403b777aa4aed9056767e01f1ccdb90d943785da",
+                  "width" : 64
+                } ],
+                "name" : "Tremaine The Album",
+                "type" : "album",
+                "uri" : "spotify:album:5gQtvMHA7yqdzKXrHpe63C"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/2iojnBLj0qIMiKPvVhLnsH"
+                },
+                "href" : "https://api.spotify.com/v1/artists/2iojnBLj0qIMiKPvVhLnsH",
+                "id" : "2iojnBLj0qIMiKPvVhLnsH",
+                "name" : "Trey Songz",
+                "type" : "artist",
+                "uri" : "spotify:artist:2iojnBLj0qIMiKPvVhLnsH"
+              } ],
+              "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+              "disc_number" : 1,
+              "duration_ms" : 244280,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USAT21700161"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/7L87B1YWTT11I0mSAEYEOF"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/7L87B1YWTT11I0mSAEYEOF",
+              "id" : "7L87B1YWTT11I0mSAEYEOF",
+              "name" : "Song Goes Off",
+              "popularity" : 66,
+              "preview_url" : "https://p.scdn.co/mp3-preview/9298e88714c38f0bdd6e6063e3c839239ec9e1a0?cid=<CLIENT_ID>",
+              "track_number" : 7,
+              "type" : "track",
+              "uri" : "spotify:track:7L87B1YWTT11I0mSAEYEOF"
+            }
+          }, {
+            "added_at" : "2017-07-06T21:12:01Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/another_benjamin_jacobs"
+              },
+              "href" : "https://api.spotify.com/v1/users/another_benjamin_jacobs",
+              "id" : "another_benjamin_jacobs",
+              "type" : "user",
+              "uri" : "spotify:user:another_benjamin_jacobs"
+            },
+            "is_local" : false,
+            "track" : {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/3DiDSECUqqY1AuBP8qtaIa"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/3DiDSECUqqY1AuBP8qtaIa",
+                  "id" : "3DiDSECUqqY1AuBP8qtaIa",
+                  "name" : "Alicia Keys",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:3DiDSECUqqY1AuBP8qtaIa"
+                } ],
+                "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/5qUlPoDmNxCSzqVx81RDLJ"
+                },
+                "href" : "https://api.spotify.com/v1/albums/5qUlPoDmNxCSzqVx81RDLJ",
+                "id" : "5qUlPoDmNxCSzqVx81RDLJ",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/fc6e847fc9f0d26c15ea1c16bae44dbbb9364c5f",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/6a5de49f0ca329b1dd94691aa1225d43ac6d5ff4",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/e94d03db8e4b522d6e06e2106421ce1c587559c9",
+                  "width" : 64
+                } ],
+                "name" : "Songs In A Minor",
+                "type" : "album",
+                "uri" : "spotify:album:5qUlPoDmNxCSzqVx81RDLJ"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3DiDSECUqqY1AuBP8qtaIa"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3DiDSECUqqY1AuBP8qtaIa",
+                "id" : "3DiDSECUqqY1AuBP8qtaIa",
+                "name" : "Alicia Keys",
+                "type" : "artist",
+                "uri" : "spotify:artist:3DiDSECUqqY1AuBP8qtaIa"
+              } ],
+              "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+              "disc_number" : 1,
+              "duration_ms" : 210200,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USJAY0100057"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/0KQx6HOpJueiSkztcS0r7D"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/0KQx6HOpJueiSkztcS0r7D",
+              "id" : "0KQx6HOpJueiSkztcS0r7D",
+              "name" : "Fallin'",
+              "popularity" : 71,
+              "preview_url" : "https://p.scdn.co/mp3-preview/b3dea0edd6e1e3a122f11903463de8d2d9ff3044?cid=<CLIENT_ID>",
+              "track_number" : 4,
+              "type" : "track",
+              "uri" : "spotify:track:0KQx6HOpJueiSkztcS0r7D"
+            }
+          }, {
+            "added_at" : "2017-07-06T21:12:04Z",
+            "added_by" : {
+              "external_urls" : {
+                "spotify" : "http://open.spotify.com/user/another_benjamin_jacobs"
+              },
+              "href" : "https://api.spotify.com/v1/users/another_benjamin_jacobs",
+              "id" : "another_benjamin_jacobs",
+              "type" : "user",
+              "uri" : "spotify:user:another_benjamin_jacobs"
+            },
+            "is_local" : false,
+            "track" : {
+              "album" : {
+                "album_type" : "single",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/2iojnBLj0qIMiKPvVhLnsH"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/2iojnBLj0qIMiKPvVhLnsH",
+                  "id" : "2iojnBLj0qIMiKPvVhLnsH",
+                  "name" : "Trey Songz",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:2iojnBLj0qIMiKPvVhLnsH"
+                } ],
+                "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/6V98SpI9N9lCghFZ92GVbm"
+                },
+                "href" : "https://api.spotify.com/v1/albums/6V98SpI9N9lCghFZ92GVbm",
+                "id" : "6V98SpI9N9lCghFZ92GVbm",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/93e4f31b180067de64d216b2ad70cc758fde6f8c",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/8ca0e732a7b106b5b7028e525d1f0d2cf44ec680",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/767468ec63c3fa274c22aed92e5a5e8ab4256517",
+                  "width" : 64
+                } ],
+                "name" : "Nobody Else But You",
+                "type" : "album",
+                "uri" : "spotify:album:6V98SpI9N9lCghFZ92GVbm"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/2iojnBLj0qIMiKPvVhLnsH"
+                },
+                "href" : "https://api.spotify.com/v1/artists/2iojnBLj0qIMiKPvVhLnsH",
+                "id" : "2iojnBLj0qIMiKPvVhLnsH",
+                "name" : "Trey Songz",
+                "type" : "artist",
+                "uri" : "spotify:artist:2iojnBLj0qIMiKPvVhLnsH"
+              } ],
+              "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+              "disc_number" : 1,
+              "duration_ms" : 228723,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USAT21700159"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/2slbJay1LPdOafYYCTe5Ss"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/2slbJay1LPdOafYYCTe5Ss",
+              "id" : "2slbJay1LPdOafYYCTe5Ss",
+              "name" : "Nobody Else But You",
+              "popularity" : 76,
+              "preview_url" : "https://p.scdn.co/mp3-preview/98f688cf8830b8d6260de45073e8c3da525b88d1?cid=<CLIENT_ID>",
+              "track_number" : 1,
+              "type" : "track",
+              "uri" : "spotify:track:2slbJay1LPdOafYYCTe5Ss"
+            }
+          } ],
+          "limit" : 100,
+          "next" : null,
+          "offset" : 0,
+          "previous" : null,
+          "total" : 4
+        }
+    http_version: 
+  recorded_at: Sat, 08 Jul 2017 23:42:02 GMT
+recorded_with: VCR 3.0.3

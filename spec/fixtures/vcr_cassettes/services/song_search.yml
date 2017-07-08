@@ -1,0 +1,1392 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/search?limit=20&q=all%20along%20the%20watchtower&type=track
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <SPOTIFY_ACCESS_TOKEN>
+      User-Agent:
+      - Faraday v0.12.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 08 Jul 2017 23:48:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "tracks" : {
+            "href" : "https://api.spotify.com/v1/search?query=all+along+the+watchtower&type=track&market=US&offset=0&limit=20",
+            "items" : [ {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/776Uo845nYHJpNaStv1Ds4",
+                  "id" : "776Uo845nYHJpNaStv1Ds4",
+                  "name" : "Jimi Hendrix",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:776Uo845nYHJpNaStv1Ds4"
+                } ],
+                "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "NZ", "PA", "PE", "PL", "PT", "PY", "SE", "SK", "SV", "TR", "US", "UY", "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/5z090LQztiqh13wYspQvKQ"
+                },
+                "href" : "https://api.spotify.com/v1/albums/5z090LQztiqh13wYspQvKQ",
+                "id" : "5z090LQztiqh13wYspQvKQ",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/bf44daf8c3f35de83e5875bc49791c1347ef36f0",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/b9f988b2164ef879c92175f7414726d77530a3a0",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/f4f6903d134ff489abbc7ea5545c6cd3a5cb51df",
+                  "width" : 64
+                } ],
+                "name" : "Electric Ladyland",
+                "type" : "album",
+                "uri" : "spotify:album:5z090LQztiqh13wYspQvKQ"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4"
+                },
+                "href" : "https://api.spotify.com/v1/artists/776Uo845nYHJpNaStv1Ds4",
+                "id" : "776Uo845nYHJpNaStv1Ds4",
+                "name" : "Jimi Hendrix",
+                "type" : "artist",
+                "uri" : "spotify:artist:776Uo845nYHJpNaStv1Ds4"
+              } ],
+              "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HN", "HU", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "NI", "NL", "NO", "NZ", "PA", "PE", "PL", "PT", "PY", "SE", "SK", "SV", "TR", "US", "UY", "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+              "disc_number" : 1,
+              "duration_ms" : 240800,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USQX90900749"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/2aoo2jlRnM3A0NyLQqMN2f"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/2aoo2jlRnM3A0NyLQqMN2f",
+              "id" : "2aoo2jlRnM3A0NyLQqMN2f",
+              "name" : "All Along the Watchtower",
+              "popularity" : 74,
+              "preview_url" : "https://p.scdn.co/mp3-preview/5eec2933740ab3984340d5f004813f8275e1bb97?cid=<CLIENT_ID>",
+              "track_number" : 15,
+              "type" : "track",
+              "uri" : "spotify:track:2aoo2jlRnM3A0NyLQqMN2f"
+            }, {
+              "album" : {
+                "album_type" : "compilation",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/776Uo845nYHJpNaStv1Ds4",
+                  "id" : "776Uo845nYHJpNaStv1Ds4",
+                  "name" : "Jimi Hendrix",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:776Uo845nYHJpNaStv1Ds4"
+                } ],
+                "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/2vfiwvlxOBNBohRXfvlMtY"
+                },
+                "href" : "https://api.spotify.com/v1/albums/2vfiwvlxOBNBohRXfvlMtY",
+                "id" : "2vfiwvlxOBNBohRXfvlMtY",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/5093e6b0b7355071bc7a0c619c970b24c1307847",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/b19effa157149b745e7e54a41d11bc4e67d5048d",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/9f7890ba6097949794aa81dca56063119c9da03d",
+                  "width" : 64
+                } ],
+                "name" : "Experience Hendrix: The Best Of Jimi Hendrix",
+                "type" : "album",
+                "uri" : "spotify:album:2vfiwvlxOBNBohRXfvlMtY"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4"
+                },
+                "href" : "https://api.spotify.com/v1/artists/776Uo845nYHJpNaStv1Ds4",
+                "id" : "776Uo845nYHJpNaStv1Ds4",
+                "name" : "Jimi Hendrix",
+                "type" : "artist",
+                "uri" : "spotify:artist:776Uo845nYHJpNaStv1Ds4"
+              } ],
+              "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+              "disc_number" : 1,
+              "duration_ms" : 238626,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USQX90900749"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/7xdLNxZCtY68x5MAOBEmBq"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/7xdLNxZCtY68x5MAOBEmBq",
+              "id" : "7xdLNxZCtY68x5MAOBEmBq",
+              "name" : "All Along the Watchtower",
+              "popularity" : 58,
+              "preview_url" : "https://p.scdn.co/mp3-preview/8c79f22235255cd48ce4100e02c92523e9b2bbfd?cid=<CLIENT_ID>",
+              "track_number" : 5,
+              "type" : "track",
+              "uri" : "spotify:track:7xdLNxZCtY68x5MAOBEmBq"
+            }, {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/74ASZWbe4lXaubB36ztrGX"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/74ASZWbe4lXaubB36ztrGX",
+                  "id" : "74ASZWbe4lXaubB36ztrGX",
+                  "name" : "Bob Dylan",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:74ASZWbe4lXaubB36ztrGX"
+                } ],
+                "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/2KzCDxKpgLqBffHu1IZ7Kn"
+                },
+                "href" : "https://api.spotify.com/v1/albums/2KzCDxKpgLqBffHu1IZ7Kn",
+                "id" : "2KzCDxKpgLqBffHu1IZ7Kn",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/920dcb4501375aa9567d08e69ab051f3ddbbc3b1",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/797127f5f3bac5025c0739671141a9fd94abc821",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/a29eceb1d45766b3a5c343f7c3f9bcfee774d2d2",
+                  "width" : 64
+                } ],
+                "name" : "John Wesley Harding",
+                "type" : "album",
+                "uri" : "spotify:album:2KzCDxKpgLqBffHu1IZ7Kn"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/74ASZWbe4lXaubB36ztrGX"
+                },
+                "href" : "https://api.spotify.com/v1/artists/74ASZWbe4lXaubB36ztrGX",
+                "id" : "74ASZWbe4lXaubB36ztrGX",
+                "name" : "Bob Dylan",
+                "type" : "artist",
+                "uri" : "spotify:artist:74ASZWbe4lXaubB36ztrGX"
+              } ],
+              "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+              "disc_number" : 1,
+              "duration_ms" : 151093,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USSM19922549"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/0Fnb2pfBfu0ka33d6Yki17"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/0Fnb2pfBfu0ka33d6Yki17",
+              "id" : "0Fnb2pfBfu0ka33d6Yki17",
+              "name" : "All Along the Watchtower",
+              "popularity" : 53,
+              "preview_url" : "https://p.scdn.co/mp3-preview/bf1b2cd73d329f5675102987d09dd6d9fc17b8ab?cid=<CLIENT_ID>",
+              "track_number" : 4,
+              "type" : "track",
+              "uri" : "spotify:track:0Fnb2pfBfu0ka33d6Yki17"
+            }, {
+              "album" : {
+                "album_type" : "single",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/7Ks3elJhSP20mD04lgiA68"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/7Ks3elJhSP20mD04lgiA68",
+                  "id" : "7Ks3elJhSP20mD04lgiA68",
+                  "name" : "Devlin",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:7Ks3elJhSP20mD04lgiA68"
+                } ],
+                "available_markets" : [ "CA", "MX", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/2H1awF6ifUq2zy9zWUoekJ"
+                },
+                "href" : "https://api.spotify.com/v1/albums/2H1awF6ifUq2zy9zWUoekJ",
+                "id" : "2H1awF6ifUq2zy9zWUoekJ",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/ce1c66e7a087bb9ae991a34e9c6a017ff1e2fc08",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/a4eb5782fe0b2f0040f29eb9fafde70b6b32c8a3",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/ca04236dad916c842e1b36b741415e0ba780199e",
+                  "width" : 64
+                } ],
+                "name" : "Watchtower",
+                "type" : "album",
+                "uri" : "spotify:album:2H1awF6ifUq2zy9zWUoekJ"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/7Ks3elJhSP20mD04lgiA68"
+                },
+                "href" : "https://api.spotify.com/v1/artists/7Ks3elJhSP20mD04lgiA68",
+                "id" : "7Ks3elJhSP20mD04lgiA68",
+                "name" : "Devlin",
+                "type" : "artist",
+                "uri" : "spotify:artist:7Ks3elJhSP20mD04lgiA68"
+              }, {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V"
+                },
+                "href" : "https://api.spotify.com/v1/artists/6eUKZXaKkcviH0Ku9w2n3V",
+                "id" : "6eUKZXaKkcviH0Ku9w2n3V",
+                "name" : "Ed Sheeran",
+                "type" : "artist",
+                "uri" : "spotify:artist:6eUKZXaKkcviH0Ku9w2n3V"
+              } ],
+              "available_markets" : [ "CA", "MX", "US" ],
+              "disc_number" : 1,
+              "duration_ms" : 219155,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "GBUM71203945"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/1N1MlRzwSKyCjfQOuI7kMj"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/1N1MlRzwSKyCjfQOuI7kMj",
+              "id" : "1N1MlRzwSKyCjfQOuI7kMj",
+              "name" : "(All Along The) Watchtower - Radio Edit",
+              "popularity" : 37,
+              "preview_url" : null,
+              "track_number" : 1,
+              "type" : "track",
+              "uri" : "spotify:track:1N1MlRzwSKyCjfQOuI7kMj"
+            }, {
+              "album" : {
+                "album_type" : "single",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/7Ks3elJhSP20mD04lgiA68"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/7Ks3elJhSP20mD04lgiA68",
+                  "id" : "7Ks3elJhSP20mD04lgiA68",
+                  "name" : "Devlin",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:7Ks3elJhSP20mD04lgiA68"
+                } ],
+                "available_markets" : [ "CA", "MX", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/2H1awF6ifUq2zy9zWUoekJ"
+                },
+                "href" : "https://api.spotify.com/v1/albums/2H1awF6ifUq2zy9zWUoekJ",
+                "id" : "2H1awF6ifUq2zy9zWUoekJ",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/ce1c66e7a087bb9ae991a34e9c6a017ff1e2fc08",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/a4eb5782fe0b2f0040f29eb9fafde70b6b32c8a3",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/ca04236dad916c842e1b36b741415e0ba780199e",
+                  "width" : 64
+                } ],
+                "name" : "Watchtower",
+                "type" : "album",
+                "uri" : "spotify:album:2H1awF6ifUq2zy9zWUoekJ"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/7Ks3elJhSP20mD04lgiA68"
+                },
+                "href" : "https://api.spotify.com/v1/artists/7Ks3elJhSP20mD04lgiA68",
+                "id" : "7Ks3elJhSP20mD04lgiA68",
+                "name" : "Devlin",
+                "type" : "artist",
+                "uri" : "spotify:artist:7Ks3elJhSP20mD04lgiA68"
+              } ],
+              "available_markets" : [ "CA", "MX", "US" ],
+              "disc_number" : 1,
+              "duration_ms" : 272062,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "GBUM71204300"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/5KIEZM0tQdhJIZABY0l1tt"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/5KIEZM0tQdhJIZABY0l1tt",
+              "id" : "5KIEZM0tQdhJIZABY0l1tt",
+              "name" : "(All Along The) Watchtower - Instrumental",
+              "popularity" : 34,
+              "preview_url" : null,
+              "track_number" : 4,
+              "type" : "track",
+              "uri" : "spotify:track:5KIEZM0tQdhJIZABY0l1tt"
+            }, {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/51Blml2LZPmy7TTiAg47vQ"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/51Blml2LZPmy7TTiAg47vQ",
+                  "id" : "51Blml2LZPmy7TTiAg47vQ",
+                  "name" : "U2",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:51Blml2LZPmy7TTiAg47vQ"
+                } ],
+                "available_markets" : [ "CA", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/7hIoJcH4ObWasDFq78u1x9"
+                },
+                "href" : "https://api.spotify.com/v1/albums/7hIoJcH4ObWasDFq78u1x9",
+                "id" : "7hIoJcH4ObWasDFq78u1x9",
+                "images" : [ {
+                  "height" : 635,
+                  "url" : "https://i.scdn.co/image/e75b38d873626d5ae1615341bd8e397e53671e6c",
+                  "width" : 640
+                }, {
+                  "height" : 297,
+                  "url" : "https://i.scdn.co/image/3738f1c954069dc16a999c3381f46949f23cf96f",
+                  "width" : 300
+                }, {
+                  "height" : 63,
+                  "url" : "https://i.scdn.co/image/b90734dabd4cebdb5b4713b92f3c6de091b5aa59",
+                  "width" : 64
+                } ],
+                "name" : "Rattle And Hum",
+                "type" : "album",
+                "uri" : "spotify:album:7hIoJcH4ObWasDFq78u1x9"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/51Blml2LZPmy7TTiAg47vQ"
+                },
+                "href" : "https://api.spotify.com/v1/artists/51Blml2LZPmy7TTiAg47vQ",
+                "id" : "51Blml2LZPmy7TTiAg47vQ",
+                "name" : "U2",
+                "type" : "artist",
+                "uri" : "spotify:artist:51Blml2LZPmy7TTiAg47vQ"
+              } ],
+              "available_markets" : [ "CA", "US" ],
+              "disc_number" : 1,
+              "duration_ms" : 264133,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "GBAAN8890005"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/3jbgBiIM5vMUr2RcLNYghI"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/3jbgBiIM5vMUr2RcLNYghI",
+              "id" : "3jbgBiIM5vMUr2RcLNYghI",
+              "name" : "All Along The Watchtower - Live - Rattle & Hum Version",
+              "popularity" : 38,
+              "preview_url" : null,
+              "track_number" : 5,
+              "type" : "track",
+              "uri" : "spotify:track:3jbgBiIM5vMUr2RcLNYghI"
+            }, {
+              "album" : {
+                "album_type" : "compilation",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/776Uo845nYHJpNaStv1Ds4",
+                  "id" : "776Uo845nYHJpNaStv1Ds4",
+                  "name" : "Jimi Hendrix",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:776Uo845nYHJpNaStv1Ds4"
+                } ],
+                "available_markets" : [ "GB", "IE", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/2nICpsZ87o6HLWC87IfYXd"
+                },
+                "href" : "https://api.spotify.com/v1/albums/2nICpsZ87o6HLWC87IfYXd",
+                "id" : "2nICpsZ87o6HLWC87IfYXd",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/6d7918c84080bdb9a7c2e652e457f79076cc00dc",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/b7eab8433f45d77fede2088281d2622877349f0e",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/4bf37c07d625f68e24bd83d30d731fcf82549d7d",
+                  "width" : 64
+                } ],
+                "name" : "Fire: The Jimi Hendrix Collection",
+                "type" : "album",
+                "uri" : "spotify:album:2nICpsZ87o6HLWC87IfYXd"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4"
+                },
+                "href" : "https://api.spotify.com/v1/artists/776Uo845nYHJpNaStv1Ds4",
+                "id" : "776Uo845nYHJpNaStv1Ds4",
+                "name" : "Jimi Hendrix",
+                "type" : "artist",
+                "uri" : "spotify:artist:776Uo845nYHJpNaStv1Ds4"
+              } ],
+              "available_markets" : [ "GB", "IE", "US" ],
+              "disc_number" : 1,
+              "duration_ms" : 238706,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USQX90900749"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/5cKqElOwQTuqQ9mTZgwT3t"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/5cKqElOwQTuqQ9mTZgwT3t",
+              "id" : "5cKqElOwQTuqQ9mTZgwT3t",
+              "name" : "All Along the Watchtower",
+              "popularity" : 33,
+              "preview_url" : "https://p.scdn.co/mp3-preview/b346956b844931bdb66290211acb1799094fb462?cid=<CLIENT_ID>",
+              "track_number" : 4,
+              "type" : "track",
+              "uri" : "spotify:track:5cKqElOwQTuqQ9mTZgwT3t"
+            }, {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/776Uo845nYHJpNaStv1Ds4",
+                  "id" : "776Uo845nYHJpNaStv1Ds4",
+                  "name" : "Jimi Hendrix",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:776Uo845nYHJpNaStv1Ds4"
+                } ],
+                "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/7wo5CoLC07ZI8fiDNb712a"
+                },
+                "href" : "https://api.spotify.com/v1/albums/7wo5CoLC07ZI8fiDNb712a",
+                "id" : "7wo5CoLC07ZI8fiDNb712a",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/4bb5b83fa5588a733c928fb09356f26a43a030b7",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/18fe246024af14bcde28fe9d7e2656ffe8745451",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/bf52519e0262a37a5a014a966cb9a89b257dabd0",
+                  "width" : 64
+                } ],
+                "name" : "South Saturn Delta",
+                "type" : "album",
+                "uri" : "spotify:album:7wo5CoLC07ZI8fiDNb712a"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4"
+                },
+                "href" : "https://api.spotify.com/v1/artists/776Uo845nYHJpNaStv1Ds4",
+                "id" : "776Uo845nYHJpNaStv1Ds4",
+                "name" : "Jimi Hendrix",
+                "type" : "artist",
+                "uri" : "spotify:artist:776Uo845nYHJpNaStv1Ds4"
+              } ],
+              "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+              "disc_number" : 1,
+              "duration_ms" : 240140,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USQX90900890"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/41mDiwZXy8XDsXMLb7NLK4"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/41mDiwZXy8XDsXMLb7NLK4",
+              "id" : "41mDiwZXy8XDsXMLb7NLK4",
+              "name" : "All Along The Watchtower - previously unreleased alternate mix",
+              "popularity" : 42,
+              "preview_url" : "https://p.scdn.co/mp3-preview/8b596e587bfffc17e0ec4014d3a54f1bcc11dca8?cid=<CLIENT_ID>",
+              "track_number" : 8,
+              "type" : "track",
+              "uri" : "spotify:track:41mDiwZXy8XDsXMLb7NLK4"
+            }, {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/2TI7qyDE0QfyOlnbtfDo7L"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/2TI7qyDE0QfyOlnbtfDo7L",
+                  "id" : "2TI7qyDE0QfyOlnbtfDo7L",
+                  "name" : "Dave Matthews Band",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:2TI7qyDE0QfyOlnbtfDo7L"
+                } ],
+                "available_markets" : [ "CA", "MX", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/0I7fVmbVX3hUDS5ejYTAaf"
+                },
+                "href" : "https://api.spotify.com/v1/albums/0I7fVmbVX3hUDS5ejYTAaf",
+                "id" : "0I7fVmbVX3hUDS5ejYTAaf",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/fde4377bcfeccf73f3d9ffea544bf3014ce74710",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/eba9cac8d288c62bf2d062d5f551004757cfb663",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/9c195cc1fff332a3104312c66426e4be80d1273a",
+                  "width" : 64
+                } ],
+                "name" : "Listener Supported",
+                "type" : "album",
+                "uri" : "spotify:album:0I7fVmbVX3hUDS5ejYTAaf"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/2TI7qyDE0QfyOlnbtfDo7L"
+                },
+                "href" : "https://api.spotify.com/v1/artists/2TI7qyDE0QfyOlnbtfDo7L",
+                "id" : "2TI7qyDE0QfyOlnbtfDo7L",
+                "name" : "Dave Matthews Band",
+                "type" : "artist",
+                "uri" : "spotify:artist:2TI7qyDE0QfyOlnbtfDo7L"
+              } ],
+              "available_markets" : [ "CA", "MX", "US" ],
+              "disc_number" : 2,
+              "duration_ms" : 471400,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USRC19901254"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/76xbigvdKraJlrw0IupYWC"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/76xbigvdKraJlrw0IupYWC",
+              "id" : "76xbigvdKraJlrw0IupYWC",
+              "name" : "All Along The Watchtower",
+              "popularity" : 33,
+              "preview_url" : "https://p.scdn.co/mp3-preview/fb67ff37be9d5640f787061893931cf191224626?cid=<CLIENT_ID>",
+              "track_number" : 10,
+              "type" : "track",
+              "uri" : "spotify:track:76xbigvdKraJlrw0IupYWC"
+            }, {
+              "album" : {
+                "album_type" : "single",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/46xMgypLHP8GNsYME3vRnV"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/46xMgypLHP8GNsYME3vRnV",
+                  "id" : "46xMgypLHP8GNsYME3vRnV",
+                  "name" : "The Forest Rangers",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:46xMgypLHP8GNsYME3vRnV"
+                } ],
+                "available_markets" : [ "CA", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/2NkTkCkwPwGrljRyMZnA2q"
+                },
+                "href" : "https://api.spotify.com/v1/albums/2NkTkCkwPwGrljRyMZnA2q",
+                "id" : "2NkTkCkwPwGrljRyMZnA2q",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/d6fbe2fd6c8f63163397cd25fb260888a8ff7b79",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/dc1eaa237208350f1cc5ec5e6dc70bde82775159",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/7f9976ddd9405baac9b658a858fa8dd6c66fd34f",
+                  "width" : 64
+                } ],
+                "name" : "All Along the Watchtower [from Sons of Anarchy (Instrumental)]",
+                "type" : "album",
+                "uri" : "spotify:album:2NkTkCkwPwGrljRyMZnA2q"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/46xMgypLHP8GNsYME3vRnV"
+                },
+                "href" : "https://api.spotify.com/v1/artists/46xMgypLHP8GNsYME3vRnV",
+                "id" : "46xMgypLHP8GNsYME3vRnV",
+                "name" : "The Forest Rangers",
+                "type" : "artist",
+                "uri" : "spotify:artist:46xMgypLHP8GNsYME3vRnV"
+              }, {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/3MjRrLK3oWzDniKxjbKPYm"
+                },
+                "href" : "https://api.spotify.com/v1/artists/3MjRrLK3oWzDniKxjbKPYm",
+                "id" : "3MjRrLK3oWzDniKxjbKPYm",
+                "name" : "Gabe Witcher",
+                "type" : "artist",
+                "uri" : "spotify:artist:3MjRrLK3oWzDniKxjbKPYm"
+              } ],
+              "available_markets" : [ "CA", "US" ],
+              "disc_number" : 1,
+              "duration_ms" : 172080,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USQX91402513"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/7gP40cgwzUeDkypRwpSNrf"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/7gP40cgwzUeDkypRwpSNrf",
+              "id" : "7gP40cgwzUeDkypRwpSNrf",
+              "name" : "All Along the Watchtower - From Sons of Anarchy (Instrumental)",
+              "popularity" : 30,
+              "preview_url" : "https://p.scdn.co/mp3-preview/38e8b86876f1dbe0eadb76e7681f8bd2767eb770?cid=<CLIENT_ID>",
+              "track_number" : 1,
+              "type" : "track",
+              "uri" : "spotify:track:7gP40cgwzUeDkypRwpSNrf"
+            }, {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/2TI7qyDE0QfyOlnbtfDo7L"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/2TI7qyDE0QfyOlnbtfDo7L",
+                  "id" : "2TI7qyDE0QfyOlnbtfDo7L",
+                  "name" : "Dave Matthews Band",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:2TI7qyDE0QfyOlnbtfDo7L"
+                } ],
+                "available_markets" : [ "MX", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/3WRYcYhVXtclxzqbSmNyZK"
+                },
+                "href" : "https://api.spotify.com/v1/albums/3WRYcYhVXtclxzqbSmNyZK",
+                "id" : "3WRYcYhVXtclxzqbSmNyZK",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/353873f8391a98080d95529eeb9602e6b6795a0f",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/93472234dee97ffb2563b8d81a7b71b9cfff56f5",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/5fbe3413d463638dd8095aae307e2e1dc1fbbe0b",
+                  "width" : 64
+                } ],
+                "name" : "The Central Park Concert",
+                "type" : "album",
+                "uri" : "spotify:album:3WRYcYhVXtclxzqbSmNyZK"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/2TI7qyDE0QfyOlnbtfDo7L"
+                },
+                "href" : "https://api.spotify.com/v1/artists/2TI7qyDE0QfyOlnbtfDo7L",
+                "id" : "2TI7qyDE0QfyOlnbtfDo7L",
+                "name" : "Dave Matthews Band",
+                "type" : "artist",
+                "uri" : "spotify:artist:2TI7qyDE0QfyOlnbtfDo7L"
+              } ],
+              "available_markets" : [ "MX", "US" ],
+              "disc_number" : 3,
+              "duration_ms" : 779453,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USRC10301668"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/0AU54nX4FploMXKmfRLuld"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/0AU54nX4FploMXKmfRLuld",
+              "id" : "0AU54nX4FploMXKmfRLuld",
+              "name" : "All Along The Watchtower",
+              "popularity" : 30,
+              "preview_url" : "https://p.scdn.co/mp3-preview/89962a3935d51dff30934e9cb4946e1b1dd557ab?cid=<CLIENT_ID>",
+              "track_number" : 5,
+              "type" : "track",
+              "uri" : "spotify:track:0AU54nX4FploMXKmfRLuld"
+            }, {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                  "id" : "0LyfQWJT6nXafLPZqxe9Of",
+                  "name" : "Various Artists",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                } ],
+                "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/5qhiyU2k9DhAHkepmh9Fkg"
+                },
+                "href" : "https://api.spotify.com/v1/albums/5qhiyU2k9DhAHkepmh9Fkg",
+                "id" : "5qhiyU2k9DhAHkepmh9Fkg",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/17d02770c6cd329cbb6950a7968aecfefa5025b6",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/68ab7680437dace449a3b29a4f08f16454830fea",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/ca7faa1f25dba1f25af1a19168dc17e4e4d3fca6",
+                  "width" : 64
+                } ],
+                "name" : "Songs of Anarchy, Vol. 4 (Music from Sons of Anarchy)",
+                "type" : "album",
+                "uri" : "spotify:album:5qhiyU2k9DhAHkepmh9Fkg"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/0YyLcVIufBPVyu6vGDzBNO"
+                },
+                "href" : "https://api.spotify.com/v1/artists/0YyLcVIufBPVyu6vGDzBNO",
+                "id" : "0YyLcVIufBPVyu6vGDzBNO",
+                "name" : "Billy Valentine",
+                "type" : "artist",
+                "uri" : "spotify:artist:0YyLcVIufBPVyu6vGDzBNO"
+              }, {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/46xMgypLHP8GNsYME3vRnV"
+                },
+                "href" : "https://api.spotify.com/v1/artists/46xMgypLHP8GNsYME3vRnV",
+                "id" : "46xMgypLHP8GNsYME3vRnV",
+                "name" : "The Forest Rangers",
+                "type" : "artist",
+                "uri" : "spotify:artist:46xMgypLHP8GNsYME3vRnV"
+              } ],
+              "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+              "disc_number" : 1,
+              "duration_ms" : 238013,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USQX91402395"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/13z9V33JWmarZo7SSFAk0X"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/13z9V33JWmarZo7SSFAk0X",
+              "id" : "13z9V33JWmarZo7SSFAk0X",
+              "name" : "All Along the Watchtower - From \"Sons of Anarchy\"",
+              "popularity" : 47,
+              "preview_url" : "https://p.scdn.co/mp3-preview/3f129f9dd0af4f8127cae5697531a1d79395c307?cid=<CLIENT_ID>",
+              "track_number" : 5,
+              "type" : "track",
+              "uri" : "spotify:track:13z9V33JWmarZo7SSFAk0X"
+            }, {
+              "album" : {
+                "album_type" : "compilation",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/74ASZWbe4lXaubB36ztrGX"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/74ASZWbe4lXaubB36ztrGX",
+                  "id" : "74ASZWbe4lXaubB36ztrGX",
+                  "name" : "Bob Dylan",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:74ASZWbe4lXaubB36ztrGX"
+                } ],
+                "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/1y3abw64BlSEeFuuhjlke1"
+                },
+                "href" : "https://api.spotify.com/v1/albums/1y3abw64BlSEeFuuhjlke1",
+                "id" : "1y3abw64BlSEeFuuhjlke1",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/225f700d59ba3fda5674abd570dcf1bf2732a4a7",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/de11dc32a6c4d48c68ae3e0cf4f51f38ca880982",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/ffd5548e8494728fbdbc71732d4a7df8e03ed376",
+                  "width" : 64
+                } ],
+                "name" : "The Essential Bob Dylan",
+                "type" : "album",
+                "uri" : "spotify:album:1y3abw64BlSEeFuuhjlke1"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/74ASZWbe4lXaubB36ztrGX"
+                },
+                "href" : "https://api.spotify.com/v1/artists/74ASZWbe4lXaubB36ztrGX",
+                "id" : "74ASZWbe4lXaubB36ztrGX",
+                "name" : "Bob Dylan",
+                "type" : "artist",
+                "uri" : "spotify:artist:74ASZWbe4lXaubB36ztrGX"
+              } ],
+              "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+              "disc_number" : 1,
+              "duration_ms" : 151293,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USSM19922549"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/5qimtvhKqwoYOcUWifL7jr"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/5qimtvhKqwoYOcUWifL7jr",
+              "id" : "5qimtvhKqwoYOcUWifL7jr",
+              "name" : "All Along the Watchtower",
+              "popularity" : 36,
+              "preview_url" : "https://p.scdn.co/mp3-preview/61cf2b94a365a980ab2ed9d7550044d5357fae6b?cid=<CLIENT_ID>",
+              "track_number" : 12,
+              "type" : "track",
+              "uri" : "spotify:track:5qimtvhKqwoYOcUWifL7jr"
+            }, {
+              "album" : {
+                "album_type" : "single",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                  "id" : "0LyfQWJT6nXafLPZqxe9Of",
+                  "name" : "Various Artists",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                } ],
+                "available_markets" : [ "CA", "MX", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/5tqfjjtnRgbEn9H8Mr0YPV"
+                },
+                "href" : "https://api.spotify.com/v1/albums/5tqfjjtnRgbEn9H8Mr0YPV",
+                "id" : "5tqfjjtnRgbEn9H8Mr0YPV",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/8e64965d100145bbfe71e2781e489b7fe608dbde",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/11430fc9ef5d76e9b84799e2f4102edd7da8a82e",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/1501d4dc40d5bc41850f96263020e2b9a8c5d1bf",
+                  "width" : 64
+                } ],
+                "name" : "Need For Speed - Original Motion Picture Soundtrack",
+                "type" : "album",
+                "uri" : "spotify:album:5tqfjjtnRgbEn9H8Mr0YPV"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/2FsZnS8gQ8jG1HGnPYNlm9"
+                },
+                "href" : "https://api.spotify.com/v1/artists/2FsZnS8gQ8jG1HGnPYNlm9",
+                "id" : "2FsZnS8gQ8jG1HGnPYNlm9",
+                "name" : "Jamie N Commons",
+                "type" : "artist",
+                "uri" : "spotify:artist:2FsZnS8gQ8jG1HGnPYNlm9"
+              } ],
+              "available_markets" : [ "CA", "MX", "US" ],
+              "disc_number" : 1,
+              "duration_ms" : 210306,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USUM71403078"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/2xEwLqudOiHUioLy67fTbh"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/2xEwLqudOiHUioLy67fTbh",
+              "id" : "2xEwLqudOiHUioLy67fTbh",
+              "name" : "All Along The Watchtower - Alex Da Kid Remix",
+              "popularity" : 35,
+              "preview_url" : null,
+              "track_number" : 2,
+              "type" : "track",
+              "uri" : "spotify:track:2xEwLqudOiHUioLy67fTbh"
+            }, {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/2TI7qyDE0QfyOlnbtfDo7L"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/2TI7qyDE0QfyOlnbtfDo7L",
+                  "id" : "2TI7qyDE0QfyOlnbtfDo7L",
+                  "name" : "Dave Matthews Band",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:2TI7qyDE0QfyOlnbtfDo7L"
+                } ],
+                "available_markets" : [ "CA", "MX", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/26Xf0FH58wO2VVWk1TyJDN"
+                },
+                "href" : "https://api.spotify.com/v1/albums/26Xf0FH58wO2VVWk1TyJDN",
+                "id" : "26Xf0FH58wO2VVWk1TyJDN",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/e4b60c275d1a40246ab5c3425400b7e808c25f0c",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/09fe1cb2d2c51e77aa0b6aa7872278402e7a0f5c",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/81de2dca1eb202cfce0730df7387f42a4c08a262",
+                  "width" : 64
+                } ],
+                "name" : "Live At Red Rocks 8.15.95",
+                "type" : "album",
+                "uri" : "spotify:album:26Xf0FH58wO2VVWk1TyJDN"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/2TI7qyDE0QfyOlnbtfDo7L"
+                },
+                "href" : "https://api.spotify.com/v1/artists/2TI7qyDE0QfyOlnbtfDo7L",
+                "id" : "2TI7qyDE0QfyOlnbtfDo7L",
+                "name" : "Dave Matthews Band",
+                "type" : "artist",
+                "uri" : "spotify:artist:2TI7qyDE0QfyOlnbtfDo7L"
+              } ],
+              "available_markets" : [ "CA", "MX", "US" ],
+              "disc_number" : 2,
+              "duration_ms" : 417760,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USRC19506451"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/4J6KIKKEjUtKPwhNVjMUxJ"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/4J6KIKKEjUtKPwhNVjMUxJ",
+              "id" : "4J6KIKKEjUtKPwhNVjMUxJ",
+              "name" : "All Along The Watchtower",
+              "popularity" : 30,
+              "preview_url" : "https://p.scdn.co/mp3-preview/2ec3ad79a8ad28d73104da37521be8b2ac0732c4?cid=<CLIENT_ID>",
+              "track_number" : 8,
+              "type" : "track",
+              "uri" : "spotify:track:4J6KIKKEjUtKPwhNVjMUxJ"
+            }, {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/2TI7qyDE0QfyOlnbtfDo7L"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/2TI7qyDE0QfyOlnbtfDo7L",
+                  "id" : "2TI7qyDE0QfyOlnbtfDo7L",
+                  "name" : "Dave Matthews Band",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:2TI7qyDE0QfyOlnbtfDo7L"
+                } ],
+                "available_markets" : [ "CA", "MX", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/0WHU1OAK3h4wPoojPLyEo0"
+                },
+                "href" : "https://api.spotify.com/v1/albums/0WHU1OAK3h4wPoojPLyEo0",
+                "id" : "0WHU1OAK3h4wPoojPLyEo0",
+                "images" : [ {
+                  "height" : 572,
+                  "url" : "https://i.scdn.co/image/f0e58d502015766991419afb540b9c784fb53c83",
+                  "width" : 640
+                }, {
+                  "height" : 268,
+                  "url" : "https://i.scdn.co/image/2ff056e69ef247b3d4bfa302f983ac136446b660",
+                  "width" : 300
+                }, {
+                  "height" : 57,
+                  "url" : "https://i.scdn.co/image/d01e5371d5dbb688b417032d0d3053293e3ebf56",
+                  "width" : 64
+                } ],
+                "name" : "Live In New York City",
+                "type" : "album",
+                "uri" : "spotify:album:0WHU1OAK3h4wPoojPLyEo0"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/2TI7qyDE0QfyOlnbtfDo7L"
+                },
+                "href" : "https://api.spotify.com/v1/artists/2TI7qyDE0QfyOlnbtfDo7L",
+                "id" : "2TI7qyDE0QfyOlnbtfDo7L",
+                "name" : "Dave Matthews Band",
+                "type" : "artist",
+                "uri" : "spotify:artist:2TI7qyDE0QfyOlnbtfDo7L"
+              } ],
+              "available_markets" : [ "CA", "MX", "US" ],
+              "disc_number" : 1,
+              "duration_ms" : 531066,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USRC11000793"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/7rJyidvGOefOGFCBEoBQQ5"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/7rJyidvGOefOGFCBEoBQQ5",
+              "id" : "7rJyidvGOefOGFCBEoBQQ5",
+              "name" : "All Along The Watchtower - Live In New York City",
+              "popularity" : 33,
+              "preview_url" : "https://p.scdn.co/mp3-preview/f5a84c959cfc8c5b2db5e254d62b7fa81f66ccb3?cid=<CLIENT_ID>",
+              "track_number" : 21,
+              "type" : "track",
+              "uri" : "spotify:track:7rJyidvGOefOGFCBEoBQQ5"
+            }, {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/0LyfQWJT6nXafLPZqxe9Of"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/0LyfQWJT6nXafLPZqxe9Of",
+                  "id" : "0LyfQWJT6nXafLPZqxe9Of",
+                  "name" : "Various Artists",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:0LyfQWJT6nXafLPZqxe9Of"
+                } ],
+                "available_markets" : [ "CA", "MX", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/009lBg76AFxbQdUccyVaMB"
+                },
+                "href" : "https://api.spotify.com/v1/albums/009lBg76AFxbQdUccyVaMB",
+                "id" : "009lBg76AFxbQdUccyVaMB",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/09e6eca031df93809f8b8e45d1119e8f2097b146",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/7430f1d354b69743ce776c09be0f5aa2972cabe5",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/eea9b511a9fa41bdc5d9f7e1dc42965354af25ca",
+                  "width" : 64
+                } ],
+                "name" : "Punk Goes Classic Rock",
+                "type" : "album",
+                "uri" : "spotify:album:009lBg76AFxbQdUccyVaMB"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/6RvruFAgvsAb4B82u8wsSH"
+                },
+                "href" : "https://api.spotify.com/v1/artists/6RvruFAgvsAb4B82u8wsSH",
+                "id" : "6RvruFAgvsAb4B82u8wsSH",
+                "name" : "Envy On The Coast",
+                "type" : "artist",
+                "uri" : "spotify:artist:6RvruFAgvsAb4B82u8wsSH"
+              } ],
+              "available_markets" : [ "CA", "MX", "US" ],
+              "disc_number" : 1,
+              "duration_ms" : 231800,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "US5261013812"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/2kA5sP3g1j6VoBMp662Pyb"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/2kA5sP3g1j6VoBMp662Pyb",
+              "id" : "2kA5sP3g1j6VoBMp662Pyb",
+              "name" : "All Along The Watchtower",
+              "popularity" : 28,
+              "preview_url" : null,
+              "track_number" : 12,
+              "type" : "track",
+              "uri" : "spotify:track:2kA5sP3g1j6VoBMp662Pyb"
+            }, {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/2DWQX92uew7DlsgN0yD775"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/2DWQX92uew7DlsgN0yD775",
+                  "id" : "2DWQX92uew7DlsgN0yD775",
+                  "name" : "Dave Mason",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:2DWQX92uew7DlsgN0yD775"
+                } ],
+                "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/3YQ2lHG3iIE1j4Eqo50ONq"
+                },
+                "href" : "https://api.spotify.com/v1/albums/3YQ2lHG3iIE1j4Eqo50ONq",
+                "id" : "3YQ2lHG3iIE1j4Eqo50ONq",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/538b6382804d025e66782b0b4c1c6c8d945de6d5",
+                  "width" : 620
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/e3b9a6a839c2d2520f2e31b9215918d6835866e0",
+                  "width" : 291
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/622f61a2f8fa303e07721d5249a26cf59a15232c",
+                  "width" : 62
+                } ],
+                "name" : "Dave Mason",
+                "type" : "album",
+                "uri" : "spotify:album:3YQ2lHG3iIE1j4Eqo50ONq"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/2DWQX92uew7DlsgN0yD775"
+                },
+                "href" : "https://api.spotify.com/v1/artists/2DWQX92uew7DlsgN0yD775",
+                "id" : "2DWQX92uew7DlsgN0yD775",
+                "name" : "Dave Mason",
+                "type" : "artist",
+                "uri" : "spotify:artist:2DWQX92uew7DlsgN0yD775"
+              } ],
+              "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+              "disc_number" : 1,
+              "duration_ms" : 243293,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USSM17400788"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/4LhoGywwJasfwo7IRzBT5T"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/4LhoGywwJasfwo7IRzBT5T",
+              "id" : "4LhoGywwJasfwo7IRzBT5T",
+              "name" : "All Along the Watchtower",
+              "popularity" : 32,
+              "preview_url" : "https://p.scdn.co/mp3-preview/e630603b45804bb09aed47a65ca50276b6993ef8?cid=<CLIENT_ID>",
+              "track_number" : 5,
+              "type" : "track",
+              "uri" : "spotify:track:4LhoGywwJasfwo7IRzBT5T"
+            }, {
+              "album" : {
+                "album_type" : "album",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/4o6DE8hZbgTTInaDQDEQVa"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/4o6DE8hZbgTTInaDQDEQVa",
+                  "id" : "4o6DE8hZbgTTInaDQDEQVa",
+                  "name" : "Original Motion Picture Soundtrack",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:4o6DE8hZbgTTInaDQDEQVa"
+                } ],
+                "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/16NqPu4ZT94LJyEV6ukiyZ"
+                },
+                "href" : "https://api.spotify.com/v1/albums/16NqPu4ZT94LJyEV6ukiyZ",
+                "id" : "16NqPu4ZT94LJyEV6ukiyZ",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/3c0d0aadc1b0415782b9d57801c018c84285d24e",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/aa1253dcded9923ef9c63f59c579dfdd66c0d643",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/2ce29e72d63d1e74e582de4c930ef0230b4b90a2",
+                  "width" : 64
+                } ],
+                "name" : "A Bronx Tale - Music From The Motion Picture",
+                "type" : "album",
+                "uri" : "spotify:album:16NqPu4ZT94LJyEV6ukiyZ"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/776Uo845nYHJpNaStv1Ds4"
+                },
+                "href" : "https://api.spotify.com/v1/artists/776Uo845nYHJpNaStv1Ds4",
+                "id" : "776Uo845nYHJpNaStv1Ds4",
+                "name" : "Jimi Hendrix",
+                "type" : "artist",
+                "uri" : "spotify:artist:776Uo845nYHJpNaStv1Ds4"
+              } ],
+              "available_markets" : [ "AD", "AR", "AT", "AU", "BE", "BG", "BO", "BR", "CA", "CH", "CL", "CO", "CR", "CY", "CZ", "DE", "DK", "DO", "EC", "EE", "ES", "FI", "FR", "GB", "GR", "GT", "HK", "HN", "HU", "ID", "IE", "IS", "IT", "JP", "LI", "LT", "LU", "LV", "MC", "MT", "MX", "MY", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PT", "PY", "SE", "SG", "SK", "SV", "TR", "TW", "US", "UY" ],
+              "disc_number" : 1,
+              "duration_ms" : 238626,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USSM10024926"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/40wTFLsTPBfP9BCg0X8j87"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/40wTFLsTPBfP9BCg0X8j87",
+              "id" : "40wTFLsTPBfP9BCg0X8j87",
+              "name" : "All Along the Watchtower",
+              "popularity" : 33,
+              "preview_url" : "https://p.scdn.co/mp3-preview/287faa74a93c9702fa5215aaec841044ef931c87?cid=<CLIENT_ID>",
+              "track_number" : 18,
+              "type" : "track",
+              "uri" : "spotify:track:40wTFLsTPBfP9BCg0X8j87"
+            }, {
+              "album" : {
+                "album_type" : "single",
+                "artists" : [ {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/0YyLcVIufBPVyu6vGDzBNO"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/0YyLcVIufBPVyu6vGDzBNO",
+                  "id" : "0YyLcVIufBPVyu6vGDzBNO",
+                  "name" : "Billy Valentine",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:0YyLcVIufBPVyu6vGDzBNO"
+                }, {
+                  "external_urls" : {
+                    "spotify" : "https://open.spotify.com/artist/46xMgypLHP8GNsYME3vRnV"
+                  },
+                  "href" : "https://api.spotify.com/v1/artists/46xMgypLHP8GNsYME3vRnV",
+                  "id" : "46xMgypLHP8GNsYME3vRnV",
+                  "name" : "The Forest Rangers",
+                  "type" : "artist",
+                  "uri" : "spotify:artist:46xMgypLHP8GNsYME3vRnV"
+                } ],
+                "available_markets" : [ "CA", "US" ],
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/album/3CpvpnWIOFv48Ih4RpTOWn"
+                },
+                "href" : "https://api.spotify.com/v1/albums/3CpvpnWIOFv48Ih4RpTOWn",
+                "id" : "3CpvpnWIOFv48Ih4RpTOWn",
+                "images" : [ {
+                  "height" : 640,
+                  "url" : "https://i.scdn.co/image/f91e2572c34ec3cc133e13a819a18fea4ca10092",
+                  "width" : 640
+                }, {
+                  "height" : 300,
+                  "url" : "https://i.scdn.co/image/6a94bccb6f23698f575137bca2be6eafbfc216d1",
+                  "width" : 300
+                }, {
+                  "height" : 64,
+                  "url" : "https://i.scdn.co/image/a6b69229282b4bbdc0aa8e19bb80299c894fdb29",
+                  "width" : 64
+                } ],
+                "name" : "All Along the Watchtower (From \"Sons of Anarchy\")",
+                "type" : "album",
+                "uri" : "spotify:album:3CpvpnWIOFv48Ih4RpTOWn"
+              },
+              "artists" : [ {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/0YyLcVIufBPVyu6vGDzBNO"
+                },
+                "href" : "https://api.spotify.com/v1/artists/0YyLcVIufBPVyu6vGDzBNO",
+                "id" : "0YyLcVIufBPVyu6vGDzBNO",
+                "name" : "Billy Valentine",
+                "type" : "artist",
+                "uri" : "spotify:artist:0YyLcVIufBPVyu6vGDzBNO"
+              }, {
+                "external_urls" : {
+                  "spotify" : "https://open.spotify.com/artist/46xMgypLHP8GNsYME3vRnV"
+                },
+                "href" : "https://api.spotify.com/v1/artists/46xMgypLHP8GNsYME3vRnV",
+                "id" : "46xMgypLHP8GNsYME3vRnV",
+                "name" : "The Forest Rangers",
+                "type" : "artist",
+                "uri" : "spotify:artist:46xMgypLHP8GNsYME3vRnV"
+              } ],
+              "available_markets" : [ "CA", "US" ],
+              "disc_number" : 1,
+              "duration_ms" : 237280,
+              "explicit" : false,
+              "external_ids" : {
+                "isrc" : "USQX91402395"
+              },
+              "external_urls" : {
+                "spotify" : "https://open.spotify.com/track/68NJhOPlRuePfIV0SZX1km"
+              },
+              "href" : "https://api.spotify.com/v1/tracks/68NJhOPlRuePfIV0SZX1km",
+              "id" : "68NJhOPlRuePfIV0SZX1km",
+              "name" : "All Along the Watchtower - From \"Sons of Anarchy\"",
+              "popularity" : 24,
+              "preview_url" : "https://p.scdn.co/mp3-preview/0b544b894be9e6dbf36e67d5eb28a1284096a73e?cid=<CLIENT_ID>",
+              "track_number" : 1,
+              "type" : "track",
+              "uri" : "spotify:track:68NJhOPlRuePfIV0SZX1km"
+            } ],
+            "limit" : 20,
+            "next" : "https://api.spotify.com/v1/search?query=all+along+the+watchtower&type=track&market=US&offset=20&limit=20",
+            "offset" : 0,
+            "previous" : null,
+            "total" : 760
+          }
+        }
+    http_version: 
+  recorded_at: Sat, 08 Jul 2017 23:48:36 GMT
+recorded_with: VCR 3.0.3
