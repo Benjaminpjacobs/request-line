@@ -1,4 +1,5 @@
 class RequestController < ApplicationController
+  before_action :set_request, only: [:update]
   def new
     session[:playlist_params] = playlist_params
   end
@@ -19,11 +20,24 @@ class RequestController < ApplicationController
     
   end
 
-  def playlist_params
-    params.permit(:playlist_id, :playlist_owner, :playlist_name)
-  end
 
-  def request_params
-    params.permit(:song_id, :song_title, :song_artist, :song_album).merge(session[:playlist_params])
+  def update
+    binding.pry
+    response = @request.send(params[:update_action].to_sym, current_user)
+    redirect_to request_index_path
   end
+  
+  private
+
+    def set_request
+      @request = Request.find(params[:id])
+    end
+
+    def playlist_params
+      params.permit(:playlist_id, :playlist_owner, :playlist_name)
+    end
+
+    def request_params
+      params.permit(:song_id, :song_title, :song_artist, :song_album).merge(session[:playlist_params])
+    end
 end

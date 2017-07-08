@@ -1,14 +1,18 @@
 document.onready = function() {
     var outgoing = document.querySelector('.outgoing')
     var incoming = document.querySelector('.incoming')
-    outgoing.addEventListener('click', function() {
-        $("#outgoing-requests").toggle();
-        $("#incoming-requests").toggle();
+    var incomingRequests = document.getElementById("incoming-requests")
+    var outgoingRequests = document.getElementById("outgoing-requests")
 
-    })
-    incoming.addEventListener('click', function() {
-        $("#incoming-requests").toggle();
-        $("#outgoing-requests").toggle();
+    if (outgoing !== null && incoming !== null) {
 
-    })
+        outgoing.addEventListener('click', function() {
+            $("#outgoing-requests").toggle();
+
+        })
+        incoming.addEventListener('click', function() {
+            $("#incoming-requests").toggle();
+
+        })
+    }
 }

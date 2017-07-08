@@ -1,10 +1,9 @@
-window.onload = function() {
+document.onready = function() {
     var playlistExpand = document.getElementsByClassName('expand')
 
     var getPlaylistTracks = function(playlist, hideButton) {
         var playlistId = playlist.getAttribute("id");
         var userId = playlist.firstElementChild.innerText;
-        //getjson
         $.getJSON({
             url: 'http://localhost:3000/playlist/search',
             data: {
@@ -47,15 +46,4 @@ window.onload = function() {
             }
         }, false);
     }
-    var outgoingButton = document.getElementById('outgoing')
-    var incomingButton = document.getElementById('incoming')
-
-    outgoingButton.addEventListener('click', function() {
-        console.log('connected');
-        // $("#outgoing-requests").toggle();
-    })
-
-    incomingButton.addEventListener('click', function() {
-        // $("#incoming-requests").toggle();
-    })
 }

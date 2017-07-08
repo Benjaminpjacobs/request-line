@@ -34,7 +34,8 @@
                     <%=request.status%>
                 </td>
                 <td>
-                    action
+                    <%= link_to  "Approve", request_path(request, :update_action => 'approve'), method: :put %>
+                        <%= link_to  "Deny", request_path(request, :update_action => 'deny'), method: :put %>
                 </td>
             </tr>
             <%end%>
