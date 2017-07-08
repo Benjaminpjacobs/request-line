@@ -1,13 +1,13 @@
 <div class='profile-flex'>
-    <div class='img-container'>
+    <!--<div class='img-container'>
         <% if @spotify_user.info.images.empty? %>
             <%=image_tag("avatar.png", class: "profile-pic")%>
                 <%else%>
                     <img src=<%=@spotify_user.info.images.first[ 'url'] %> class='profile-pic'>
                     <%end%>
-    </div>
+    </div>-->
 
-    <section class='greeting'>
+    <!--<section class='greeting'>
         <h2>Welcome,
             <%= @spotify_user.info.name %>
         </h2>
@@ -15,7 +15,7 @@
             <%= link_to  "Go To Spotify", @spotify_user.info.href%> |
                 <%= link_to "Logout", logout_path, method: :delete%>
         </h4>
-    </section>
+    </section>-->
 
     <div class='flex-container-row'>
 

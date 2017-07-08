@@ -10,10 +10,12 @@
 </head>
 
 <body>
-    <div class='flex-container'>
-        <%= render 'layouts/title' %>
-            <%= yield %>
-    </div>
+    <%= render 'layouts/title' %>
+        <%= render 'layouts/navbar' %>
+            <div class='flex-container'>
+
+                <%= yield %>
+            </div>
 </body>
 
 </html>
