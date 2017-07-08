@@ -14,7 +14,7 @@
 
 .playlists {
     margin-top: 20px;
-    width: 600px;
+    width: 800px;
 }
 
 .playlist-listing,
@@ -25,4 +25,35 @@
 
 #search-results {
     width: 500px;
+}
+
+td {
+    min-width: 300px;
+}
+
+.actions {
+    width: 300px;
+}
+
+.actions a,
+.expand,
+.select {
+    margin: 0px 20px;
+    color: #a7a8aa;
+    font-weight: 100;
+}
+
+.playlist-title {
+    margin: 0px 20px;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.actions a:hover,
+.expand:hover,
+.select:hover {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 200;
+    cursor: pointer;
 }

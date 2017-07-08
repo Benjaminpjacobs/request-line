@@ -3,7 +3,7 @@ class DashboardController < ApplicationController
   before_action :check_token, only: [:index]
   
   def index
-    @spotify_user = SpotifyUser.new(current_user)
+    # @spotify_user = SpotifyUser.new(current_user)
   end
   
   private

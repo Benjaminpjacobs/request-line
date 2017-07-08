@@ -5,6 +5,7 @@ class SpotifyService
     @conn = Faraday.new :url => 'https://api.spotify.com/v1', :headers => {"Authorization" => "Bearer #{@token}"}
     @user_id = params[:user_id] || nil
     @playlist_id = params[:playlist_id] || nil
+    @song_id = params[:song_id] || nil
     @search = params[:search] || nil
 
   end
@@ -22,8 +23,11 @@ class SpotifyService
   end
   
   def self.song_search(search, token)
-    binding.pry
     new(token, {search: search}).song_search
+  end
+
+  def self.update_playlist(request, user)
+    new(user.token, {user_id: user.uid, playlist_id: request.playlist_id, song_id: request.song_id}).update_playlist
   end
 
   def info
@@ -42,8 +46,17 @@ class SpotifyService
   end
 
   def song_search
-    response = @conn.get("search", {q: @search, type: "track", limit: 10})
+    response = @conn.get("search", {q: @search, type: "track", limit: 20})
     JSON.parse(response.body)
+  end
+
+  def update_playlist
+    result = HTTParty.post(
+    "https://api.spotify.com/v1/users/#{@user_id}/playlists/#{@playlist_id}/tracks?uris=spotify%3Atrack%3A#{@song_id}",
+    :headers => {"Authorization" => "Bearer #{@token}"}
+    )
+    result.response.message
+    
   end
 
   def self.refresh_token(refresh_token, client_id_and_secret)

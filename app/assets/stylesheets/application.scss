@@ -17,7 +17,9 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "skeleton";
+@import "sections/navbar";
 @import "sections/search";
 @import "sections/profile";
 @import "sections/playlists";
+@import "sections/requests";
 @import "sections/login";

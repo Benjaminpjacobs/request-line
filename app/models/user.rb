@@ -1,5 +1,8 @@
 class User < ApplicationRecord
 
+  has_many :outgoing_requests, :class_name => 'Request', :foreign_key => 'request_from_id'
+  has_many :incoming_requests, :class_name => 'Request', :foreign_key => 'playlist_owner_id'
+
   def self.from_omniauth(auth_info)
     new_user = find_or_initialize_by(uid: auth_info[:uid])
     new_user.uid = auth_info.uid
@@ -15,7 +18,6 @@ class User < ApplicationRecord
     client_id = ENV['client_id']
     client_secret = ENV['client_secret']
     client_id_and_secret = Base64.strict_encode64("#{client_id}:#{client_secret}")
-    binding.pry
     result = SpotifyService.refresh_token(refresh_token, client_id_and_secret)
     result['access_token']
   end

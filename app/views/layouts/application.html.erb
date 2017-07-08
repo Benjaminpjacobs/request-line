@@ -10,10 +10,17 @@
 </head>
 
 <body>
-    <div class='flex-container'>
-        <%= render 'layouts/title' %>
-            <%= yield %>
-    </div>
+    <%= render 'layouts/title' %>
+        <%= render 'layouts/navbar' if current_user%>
+            <% flash.each do |key, value| %>
+                <div class="flash <%=key%>">
+                    <%=value%>
+                </div>
+                <%end%>
+                    <div class='flex-container'>
+
+                        <%= yield %>
+                    </div>
 </body>
 
 </html>
