@@ -18,51 +18,27 @@
     </section>-->
 
     <div class='flex-container-row'>
-
-
         <div class='playlists'>
-
             <h2>Playlists</h2>
-
             <section class="playlist-listing">
-
-                <%= form_tag( 'path' , remote: true) do |f| %>
-
-                    <table class="table playlist-table">
-                        <tbody>
-
-                            <% @spotify_user.playlists.each do |playlist| %>
-                                <tr>
-                                    <td>
-                                        <%= radio_button_tag(:playlist, playlist.id) %>
-                                    </td>
-                                    <td class='playlist-title' id=<%=playlist.id%> >
-                                        <span class='playlist-owner-id'><%=playlist.owner_id%></span>
-                                        <%= playlist.name %>
-                                    </td>
-                                </tr>
-                                <%end%>
-                        </tbody>
-                    </table>
-
-                    <% end %>
-
+                <table class="table playlist-table">
+                    <tbody>
+                        <% @spotify_user.playlists.each do |playlist| %>
+                            <tr>
+                                <td class='playlist-title' id=<%=playlist.id%> >
+                                    <span class='playlist-owner-id'><%=playlist.owner_id%></span>
+                                    <%= playlist.name %>
+                                </td>
+                                <td>
+                                    <div class='action'>
+                                        <span class='expand'>Expand</span><span class='select'>Select</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <%end%>
+                    </tbody>
+                </table>
             </section>
-
-
         </div>
-
-        <section class="song-search">
-            <div class="search-form">
-                <%= form_tag("/song-search", method: "get", id: "song-search") do %>
-                    <%= text_field_tag(:song_query)%>
-                        <% end %>
-                            <button id="song_query_submit">Song Search</button>
-            </div>
-            <div id='search-results'>
-            </div>
-        </section>
-
     </div>
-
 </div>

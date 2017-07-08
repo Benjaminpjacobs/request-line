@@ -1,42 +1,8 @@
 window.onload = function() {
     var songSearch = document.getElementById('song_query')
-    var songSubmit = document.getElementById('song_query_submit')
-    var playlistTitles = document.getElementsByClassName('playlist-title')
+    var playlistExpand = document.getElementsByClassName('expand')
 
-    songSubmit.addEventListener('click', function(e) {
-        $.getJSON({
-            url: 'http://localhost:3000/song/search',
-            data: {
-                q: songSearch.value,
-            },
-            success: function(response) {
-                var results = document.getElementById('search-results')
-                results.innerHTML = ''
-                for (var i = 0; i < 10; i++) {
-                    var song = document.createElement('div')
-                    song.className = 'song'
-
-                    var name = response[i].name
-                    var album = response[i].album.name
-                    var artist = response[i].album.artists[0].name
-                    var id = response[i].id
-
-                    song.innerHTML =
-                        `<h3>${name}</h3> 
-                         <p> by <span class='artist'>${artist}</span> on <span class='album'>${album}</span></p>`
-
-                    results.appendChild(song)
-                }
-            },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
-                alert("Status: " + textStatus);
-                alert("Error: " + errorThrown);
-            }
-        })
-    })
-
-
-    var getPlaylistTracks = function(playlist) {
+    var getPlaylistTracks = function(playlist, hideButton) {
         var playlistId = playlist.getAttribute("id");
         var userId = playlist.firstElementChild.innerText;
         //getjson
@@ -46,7 +12,7 @@ window.onload = function() {
                 playlist_id: playlistId,
                 user_id: userId,
             },
-            success: function(response) {
+            success: function(response, label) {
                 var playlist = document.getElementById(playlistId)
                 var trackList = document.createElement('ul')
                 trackList.className = 'track-list'
@@ -60,6 +26,7 @@ window.onload = function() {
                     trackList.appendChild(track)
                 }
                 playlist.appendChild(trackList)
+                hideButton.innerHTML = 'Hide'
             },
             error: function(XMLHttpRequest, textStatus, errorThrown) {
                 alert("Status: " + textStatus);
@@ -68,14 +35,16 @@ window.onload = function() {
         })
     };
 
-    for (var i = 0; i < playlistTitles.length; i++) {
-        playlistTitles[i].addEventListener('click', function() {
-            if (this.children.length === 1) {
-                console.log(this)
-                getPlaylistTracks(this)
+    for (var i = 0; i < playlistExpand.length; i++) {
+        playlistExpand[i].addEventListener('click', function() {
+            var playlist = this.parentNode.parentNode.previousElementSibling;
+            if (playlist.children.length === 1) {
+                var hideButton = this
+                getPlaylistTracks(playlist, hideButton)
             } else {
-                var list = this.children[1];
-                this.removeChild(list);
+                var list = playlist.children[1];
+                playlist.removeChild(list);
+                this.innerHTML = 'Expand'
             }
         }, false);
     }
