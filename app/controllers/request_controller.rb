@@ -16,6 +16,9 @@ class RequestController < ApplicationController
 
     if request.save
       redirect_to request_index_path
+    else
+      redirect_to dashboard_index_path
+      flash[:error] = "That Spotify User is not in our system. Please invite them to join!"
     end
     
   end
