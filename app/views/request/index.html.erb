@@ -72,7 +72,7 @@
                     <%=request.status%>
                 </td>
                 <td>
-                    action
+                    <%= link_to  "Cancel", request_path(request, :update_action => 'cancel'), method: :put %>
                 </td>
             </tr>
             <%end%>

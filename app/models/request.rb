@@ -17,5 +17,10 @@ class Request < ApplicationRecord
     self.status = 2
     self.save
   end
+
+  def cancel(user)
+    self.status = 3
+    self.save
+  end
 end
 

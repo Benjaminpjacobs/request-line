@@ -46,7 +46,7 @@ class SpotifyService
   end
 
   def song_search
-    response = @conn.get("search", {q: @search, type: "track", limit: 10})
+    response = @conn.get("search", {q: @search, type: "track", limit: 20})
     JSON.parse(response.body)
   end
 
