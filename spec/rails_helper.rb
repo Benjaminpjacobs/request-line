@@ -7,6 +7,7 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 # Capybara
 require 'capybara/rails'
+require 'capybara/rspec'
 # Require shoulda-matchers and config it with Rails and RSpec
 require 'shoulda-matchers'
 
@@ -16,6 +17,19 @@ Shoulda::Matchers.configure do |config|
     with.library :rails
   end
 end
+
+require 'vcr'
+
+VCR.configure do |config|
+  config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
+  config.allow_http_connections_when_no_cassette = true
+  config.hook_into :webmock
+  config.filter_sensitive_data('<CLIENT_ID>'){ENV['client_id']}
+  config.filter_sensitive_data('<CLIENT_SECRET>'){ENV['client_secret']}
+  config.filter_sensitive_data('<SPOTIFY_ACCESS_TOKEN>'){ENV['spotify_access_token']}
+  config.filter_sensitive_data('<SPOTIFY_REFRESH_TOKEN>'){ENV['spotify_refresh_token']}
+end
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in

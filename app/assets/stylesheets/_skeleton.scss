@@ -1,0 +1,95 @@
+::-webkit-scrollbar {
+    width: 5px;
+    // height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: darkgray;
+}
+
+body {
+    font-family: 'Circular', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #ffffff;
+    font-style: normal;
+    background: black;
+}
+
+h1 {
+    font-weight: 900;
+    line-height: 92px;
+    size: 80px;
+    padding: 20px;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.flex-container-row {
+    width: 90%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.small_label {
+    font-family: 'Circular', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 33px;
+    color: #fffff;
+    font-style: normal;
+}
+
+.line {
+    font-style: italic;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-weight: 800;
+    font-size: 90px;
+    line-height: 86px;
+}
+
+.song {
+    margin: 5px 0px;
+    font-weight: 100;
+}
+
+.artist,
+.album {
+    font-weight: 200;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.track p {
+    font-weight: 100;
+}
+
+.track-list {
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+.flash {
+    text-align: center;
+    font-size: 26px;
+}
+
+.error {
+    color: #c62f2f
+}

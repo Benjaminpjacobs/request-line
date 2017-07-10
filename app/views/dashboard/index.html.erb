@@ -1,0 +1,26 @@
+<div class='profile-flex'>
+    <div class='flex-container-row'>
+        <div class='playlists'>
+            <h2>Playlist</h2>
+            <section class="playlist-listing">
+                <table class="table playlist-table">
+                    <tbody>
+                        <% spotify_user.playlists.each do |playlist| %>
+                            <tr>
+                                <td class='playlist-title' id=<%=playlist.id%> >
+                                    <span class='playlist-owner-id'><%=playlist.owner_id%></span>
+                                    <%= playlist.name %>
+                                </td>
+                                <td>
+                                    <div class='actions'>
+                                        <span class='expand'>Expand</span><span class='select'><%= link_to "Make Request", new_request_path(playlist_id: playlist.id, playlist_owner: playlist.owner_id, playlist_name: playlist.name )%></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <%end%>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+</div>
