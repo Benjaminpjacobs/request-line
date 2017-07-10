@@ -39,10 +39,12 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'factory_girl_rails', '~> 4.0'
   gem 'pry-rails'
+  gem 'selenium-webdriver', '~>3.4.2'
 end
 
 group :test do
   gem 'vcr'
   gem 'webmock'
+  gem "database_cleaner"
 
 end

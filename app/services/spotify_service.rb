@@ -65,6 +65,7 @@ class SpotifyService
               :refresh_token => "#{refresh_token}"},
     :headers => {"Authorization" => "Basic #{client_id_and_secret}"}
     )
+    binding.pry
    result.parsed_response
   end
 end

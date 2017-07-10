@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - nginx
       Date:
-      - Fri, 07 Jul 2017 21:43:22 GMT
+      - Mon, 10 Jul 2017 14:59:09 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -70,5 +70,5 @@ http_interactions:
           "uri" : "spotify:user:another_benjamin_jacobs"
         }
     http_version: 
-  recorded_at: Fri, 07 Jul 2017 21:43:22 GMT
+  recorded_at: Mon, 10 Jul 2017 14:59:09 GMT
 recorded_with: VCR 3.0.3

@@ -5,14 +5,16 @@ class RequestController < ApplicationController
   end
 
   def create
-    request = Request.new(playlist_owner: User.find_by(uid: request_params[:playlist_owner]), 
+    request = Request.new(
+                          playlist_owner: User.find_by(uid: request_params[:playlist_owner]), 
                           request_from: current_user, 
                           playlist_name: request_params[:playlist_name], 
                           playlist_id: request_params[:playlist_id], 
                           song_id: request_params[:song_id], 
                           song_title: request_params[:song_title],
                           artist: request_params[:song_artist],
-                          album: request_params[:song_album])
+                          album: request_params[:song_album]
+                          )
 
     if request.save
       redirect_to request_index_path

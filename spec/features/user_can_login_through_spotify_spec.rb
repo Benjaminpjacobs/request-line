@@ -3,6 +3,7 @@ require 'support/omniauth_helper'
 
 RSpec.feature 'User can login' do
   it "can login through spotify" do
+    # TestToken.refresh_token
     VCR.use_cassette("features/user_can_log_in") do
 
       def setup

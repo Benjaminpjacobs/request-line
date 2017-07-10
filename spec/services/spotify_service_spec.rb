@@ -99,4 +99,23 @@ describe SpotifyService do
       end
     end
   end
+  context ".update_playlist" do
+    it "returns affirmative of playlist alteration" do
+      # TestToken.refresh_token
+      VCR.use_cassette("services/update_playlist") do
+        ss = SpotifyService.new(ENV['spotify_access_token'], 
+                                {:user_id=> ENV['user_id'], 
+                                 :playlist_id=> ENV['playlist_id'], 
+                                 :song_id=>"0lumpxVA1X4ljriwwnszAA"}
+                                 )
+        result = ss.update_playlist.response
+
+
+        expect(result).to be_an Object
+        expect(result.msg).to eq('Created')
+        expect(result.code).to eq('201')
+
+      end
+    end
+  end
 end

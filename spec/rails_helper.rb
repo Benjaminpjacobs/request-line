@@ -7,6 +7,7 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 # Capybara
 require 'capybara/rails'
+require 'capybara/rspec'
 # Require shoulda-matchers and config it with Rails and RSpec
 require 'shoulda-matchers'
 
@@ -21,7 +22,7 @@ require 'vcr'
 
 VCR.configure do |config|
   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
-  # config.allow_http_connections_when_no_cassette = true
+  config.allow_http_connections_when_no_cassette = true
   config.hook_into :webmock
   config.filter_sensitive_data('<CLIENT_ID>'){ENV['client_id']}
   config.filter_sensitive_data('<CLIENT_SECRET>'){ENV['client_secret']}
